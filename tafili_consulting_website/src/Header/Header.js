@@ -28,14 +28,14 @@ function Header() {
                     <div className="nav-wrapper">
 
                         <div className="logo">
-                            <a href="#home"> <img src={logo} alt="Logo Tafili" id='imageLogo' /></a>
+                            <a href="/"> <img src={logo} alt="Logo Tafili" id='imageLogo' /></a>
                         </div>
 
                         <ul id="menu">
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#sectors">Sectors</a></li>
-                            <li><a href="#yetoo">Yetoo</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="services">Services</a></li>
+                            <li><a href="sectors">Sectors</a></li>
+                            <li><a href="yetoo">Yetoo</a></li>
+                            <li><a href="contact">Contact</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -47,10 +47,10 @@ function Header() {
 
                 <div className="overlay-menu" style={{ transform: isMenuOpen ? 'translateX(0%)' : 'translateX(-100%)' }}>
                     <ul id="menu">
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#sectors">Sectors</a></li>
-                        <li><a href="#yetoo">Yetoo</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="services">Services</a></li>
+                        <li><a href="sectors">Sectors</a></li>
+                        <li><a href="yetoo">Yetoo</a></li>
+                        <li><a href="contact">Contact</a></li>
                     </ul>
                 </div>
             </header>

@@ -7,8 +7,7 @@ function Header() {
 
     useEffect(() => {
         const menuIcon = document.querySelector('.menuIcon');
-        const nav = document.querySelector('.overlay-menu');
-
+     
         const handleMenuToggle = () => {
             setIsMenuOpen(!isMenuOpen);
         };

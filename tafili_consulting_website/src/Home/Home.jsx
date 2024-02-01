@@ -45,7 +45,7 @@ function Home() {
 
       <div className="helping-text">
         <span>
-          <span className="helping-text-span">Helping today building tomorrow<br /><br /></span>
+          <span className="helping-text-span">Contributing today, shaping tomorrow<br /><br /></span>
           <span className="helping-text-span3">Our mission is to deliver the best solutions to our clients in their finance functions. We support them by providing highly-qualified and hands-on consultants to face a lack of resources, to carry out their projects and by reviewing and optimizing their processes.</span>
         </span>
       </div>
@@ -55,7 +55,7 @@ function Home() {
         <div className="rectangles">
           <div className="rectangle-138">
             <br />
-            <div className="microsoft-business-central">Microsoft Business central</div><br />
+            <div className="microsoft-business-central">Microsoft Business Central : ERP Dynamics 365 Business Central</div><br />
             <div className="business">"Business central" typically refers to a central hub or software solution for managing various aspects of a business, often associated with Microsoft Dynamics 365 Business Central in the context of enterprise resource planning (ERP).</div>
           </div>
 
@@ -66,10 +66,10 @@ function Home() {
           </div>
         </div>
 
-        <div className="rectangle-138">
+        <div className="rectangle-139">
           <br />
           <div className="yetoo">Yetoo</div><br />
-          <div className="yetoo-text">"Yetoo is blabla.Financial analysis involves interpreting financial data to evaluate a company's performance and make informed decisions. This includes assessing financial statements, ratios, and metrics to gauge profitability, liquidity, and overall financial health."</div>
+          <div className="yetoo-text">"Yetoo is a web application that provides a decision platform with dashboards, financial reporting and more. With Yetoo, you can access, analyze and visualize your data in real time, and make informed decisions based on insights and recommendations. Whether you need to monitor your performance, optimize your processes, or forecast your outcomes, Yetoo has the tools and features you need. Yetoo is easy to use, flexible and scalable, and integrates with your existing systems and applications. Try Yetoo today and discover the power of data-driven decision making"</div>
 
         </div>
       </div>

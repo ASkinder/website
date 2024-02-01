@@ -333,11 +333,6 @@
         /* Réduire la taille de la police */
     }
 
-    .sector-text-span2 {
-        font-size: 14px;
-        /* Réduire la taille de la police */
-    }
-
     .sector-text-span3 {
         font-size: 18px;
         /* Réduire la taille de la police */
@@ -383,6 +378,9 @@
     height: 36px;
     position: relative;
     margin-right: 10px;
+    display: flex; /* Pour centrer le contenu */
+    align-items: center; /* Pour centrer le contenu */
+    justify-content: center; /* Pour centrer le contenu */
 }
 
 .key-1,
@@ -567,4 +565,70 @@
     justify-content: space-around;
     align-items: center;
     margin-top: 20px;
+}
+
+
+
+/* ------------ YETOO ---------*/
+
+.yetoo {
+    color: #000000;
+    font-family: "Inter-LightItalic", sans-serif;
+    font-size: 48px;
+    line-height: 130%;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.yetoo-text-1 {
+    color: black;
+    margin-left: 200px;
+    margin-right: -10px;
+    text-align: left;
+    font-size: 42px;
+    font-family: "Sofia Pro", sans-serif;
+    font-weight: 800;
+    line-height: 1.2;
+    word-wrap: break-word;
+}
+
+.yetoo-text-2 {
+    width: 525px;
+    height: 164px;
+    color: #5C5F6E;
+    font-size: 18px;
+    font-family: Sofia Pro, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 200px;
+}
+
+.yetoo-part2 {
+    display: flex;
+    justify-content: space-between; /* Pour espacer les éléments */
+    align-items: flex-start; /* Pour aligner les éléments sur le haut */
+    margin-left: 20px; /* Ajustez la marge gauche selon vos besoins */
+}
+
+.yetoo-paragra{
+    width: calc(50% - 30px); /* Ajustez la largeur du texte en fonction de votre mise en page */
+}
+
+.yetoo-illu {
+    border-radius: 40px;
+    width: calc(50% - 30px); /* Ajustez la largeur de l'illustration en fonction de votre mise en page */
+    scale: 90%;
+}
+
+.Rectangle568 {
+    width: 564px;
+    height: 564px;
+    background: #E0F7FA;
+    border-radius: 40px;
+}
+
+.yetoo-image {
+    border-radius: 40px;
 }

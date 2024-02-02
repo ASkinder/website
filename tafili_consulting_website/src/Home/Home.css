@@ -139,23 +139,6 @@
     text-align: center;
 }
 
-.rectangle-138,
-.rectangle-138 * {
-    box-sizing: border-box;
-}
-
-.rectangle-138 {
-    background: #ffffff;
-    border-radius: 24px;
-    height: 282px;
-    position: relative;
-    width: 650px;
-    padding: 20px;
-    margin: 0 10px;
-    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.02);
-    text-align: center;
-}
-
 .rectangle-139,
 .rectangle-139 * {
     box-sizing: border-box;
@@ -164,7 +147,7 @@
 .rectangle-139 {
     background: #ffffff;
     border-radius: 24px;
-    height: 355px;
+    height: 400px;
     position: relative;
     width: 650px;
     padding: 20px;
@@ -184,7 +167,6 @@
 }
 
 .yetoo,
-.microsoft-business-central,
 .financial-it-consultant {
     color: #000000;
     text-align: center;
@@ -194,9 +176,20 @@
     font-weight: 400;
     position: relative;
     width: 559px;
-    height: 38px;
+    height: 40px;
 }
 
+.microsoft-business-central {
+    color: #000000;
+    text-align: center;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 28px;
+    line-height: 38px;
+    font-weight: 400;
+    position: relative;
+    width: 559px;
+    height: 80px;
+}
 .business,
 .financial,
 .financial *,
@@ -225,7 +218,7 @@
 }
 
 @media (max-width: 825px) {
-    .rectangle-138 {
+    .rectangle-139 {
         width: auto;
         /* Adapter la largeur automatiquement */
         height: auto;
@@ -355,15 +348,13 @@
 
     position: relative;
     box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.02);
-    width: 200px;
-    height: 100px;
+    width: 280px;
+    height: 120px;
 
     margin: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-
-  
 }
 
 .ellipse-sector,
@@ -467,18 +458,7 @@
     position: relative;
 }
 
-.upload-2,
-.upload-2 * {
-    box-sizing: border-box;
-}
 
-.upload-2 {
-    width: 16px;
-    height: 16px;
-    position: relative;
-    transform: translate(-16px, 0px);
-    overflow: visible;
-}
 
 .transport-logistic,
 .transport-logistic * {
@@ -570,7 +550,7 @@
 
 
 /* ------------ YETOO ---------*/
-
+/*
 .yetoo {
     color: #000000;
     font-family: "Inter-LightItalic", sans-serif;
@@ -582,8 +562,7 @@
 
 .yetoo-text-1 {
     color: black;
-    margin-left: 200px;
-    margin-right: -10px;
+    margin-right: -100px;
     text-align: left;
     font-size: 42px;
     font-family: "Sofia Pro", sans-serif;
@@ -602,23 +581,22 @@
     line-height: 1.5;
     word-wrap: break-word;
     text-align: left;
-    margin-left: 200px;
 }
 
 .yetoo-part2 {
     display: flex;
-    justify-content: space-between; /* Pour espacer les éléments */
-    align-items: flex-start; /* Pour aligner les éléments sur le haut */
-    margin-left: 20px; /* Ajustez la marge gauche selon vos besoins */
+    justify-content: space-between; 
+    align-items: flex-start; 
+    margin-left: 10%; 
 }
 
 .yetoo-paragra{
-    width: calc(50% - 30px); /* Ajustez la largeur du texte en fonction de votre mise en page */
+    width: calc(50% - 30px); 
 }
 
 .yetoo-illu {
     border-radius: 40px;
-    width: calc(50% - 30px); /* Ajustez la largeur de l'illustration en fonction de votre mise en page */
+    width: calc(50% - 30px); 
     scale: 90%;
 }
 
@@ -631,4 +609,42 @@
 
 .yetoo-image {
     border-radius: 40px;
+}
+
+@media (max-width: 1265px) {
+    .yetoo-part2{
+        flex-direction: column;
+        align-items: center;
+    }
+    .yetoo-illu {
+        max-width: 80%;
+        height: auto;
+    }
+}
+*/
+
+
+/* ---------- Trust Company -------*/
+
+.trust-text-span {
+    color: #000000;
+    font-family: "Inter-LightItalic", sans-serif;
+    font-size: 48px;
+    line-height: 130%;
+    font-weight: 300;
+    font-style: bold;
+}
+
+.trustCompany-image {
+    height: 650px;
+    max-width:200%;
+
+}
+
+@media (max-width: 825px) {
+
+    .trust-text-span {
+        font-size: 24px;
+        /* Réduire la taille de la police */
+    }
 }

@@ -4,7 +4,8 @@ import businessCentral from '../Img/businessCentral.jpg';
 import yetoo from '../Img/yetoo_illu2.jpg';
 import fg from '../Img/fg.png';
 import fd from '../Img/fd.png';
-import yetooillu from '../Img/yetooillu.png'
+import trustCompany from '../Img/TrustCompany.png'
+//import yetooillu from '../Img/yetooillu.png'
 import './Home.css';
 
 function Home() {
@@ -55,21 +56,21 @@ function Home() {
 
         <div className="container">
           <div className="rectangles">
-            <div className="rectangle-138">
+            <div className="rectangle-139">
               <br/>
               <div className="microsoft-business-central">Microsoft Business Central : ERP Dynamics 365 Business
                 Central
               </div>
               <br/>
-              <div className="business">"Business central" typically refers to a central hub or software solution for
-                managing various aspects of a business, often associated with Microsoft Dynamics 365 Business Central in
-                the context of enterprise resource planning (ERP).
+              <div className="business">The ERP software Business Central is a ready-to-use ERP solution for large enterprises, mid-sized companies and SMEs that want to start their digital transformation. With tools like Microsoft Flow and PowerApps as well as various applications offered in Microsoft AppSource, this solution easily adapts to the requirements of your business.
+
+Enjoy all the features of NAV on the Cloud with Microsoft Business Central ERP. By connecting the systems and processes, this all-in-one solution ensures, from a single centralized platform, the management of goods, customers, sales and financial accounting.
               </div>
             </div>
 
-            <div className="rectangle-138">
+            <div className="rectangle-139">
               <br/>
-              <div className="financial-it-consultant">Financial & IT Consultant</div>
+              <div className="financial-it-consultant">Financial & IT Consultants</div>
               <br/>
               <div className="financial">"Financial analysis involves interpreting financial data to evaluate a
                 company's performance and make informed decisions. This includes assessing financial statements, ratios,
@@ -291,8 +292,20 @@ function Home() {
             <div class="real-estate">REAL ESTATE</div>
 
           </div>
+          
         </div>
         <br/><br/> <br/><br/><br/>
+        <span className="trust-text-span">Top company trust us<br/><br/></span>
+        <img className="trustCompany-image" src={trustCompany}></img>
+      </div>
+  );
+
+}
+
+export default Home;
+
+
+        /**
         <span className="yetoo">YETOO<br/><br/></span>
         <br/><br/>
         <div className="yetoo-part2">
@@ -314,9 +327,4 @@ function Home() {
             </div>
           </div>
         </div>
-      </div>
-  );
-
-}
-
-export default Home;
+        */

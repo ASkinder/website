@@ -46,11 +46,11 @@ function Home() {
         </div>
         <br/><br/>
 
-        <div className="helping-text">
-        <span>
-          <span className="helping-text-span">Contributing today, shaping tomorrow<br/><br/></span>
-          <span className="helping-text-span3">Our mission is to deliver the best solutions to our clients in their finance functions. We support them by providing highly-qualified and hands-on consultants to face a lack of resources, to carry out their projects and by reviewing and optimizing their processes.</span>
-        </span>
+        <div className="helping-text" id="services">
+          <span>
+            <span className="helping-text-span">Contributing today, shaping tomorrow<br /><br /></span>
+            <span className="helping-text-span3">Our mission is to deliver the best solutions to our clients in their finance functions. We support them by providing highly-qualified and hands-on consultants to face a lack of resources, to carry out their projects and by reviewing and optimizing their processes.</span>
+          </span>
         </div>
         <br/><br/>
 
@@ -97,11 +97,11 @@ Enjoy all the features of NAV on the Cloud with Microsoft Business Central ERP. 
 
         <br/><br/><br/>
 
-        <div className="sector-text">
-        <span>
-          <span className="sector-text-span">Sector<br/><br/></span>
-          <span className="sector-text-span3">We are capable and have already worked in several different sectors. No matter what sector your company operates in, we can offer you our help.</span>
-        </span>
+        <div className="sector-text" id="sectors">
+          <span>
+            <span className="sector-text-span">Sector<br/><br/></span>
+            <span className="sector-text-span3">We are capable and have already worked in several different sectors. No matter what sector your company operates in, we can offer you our help.</span>
+          </span>
         </div>
         <br/><br/>
 
@@ -200,7 +200,7 @@ Enjoy all the features of NAV on the Cloud with Microsoft Business Central ERP. 
             <div class="public-sector">PUBLIC SECTOR</div>
           </div>
         </div>
-        <div class="sector-container1">
+        <div class="sector-container">
           <div class="rectangle-sector">
             <div class="ellipse-sector">
               <svg
@@ -297,6 +297,7 @@ Enjoy all the features of NAV on the Cloud with Microsoft Business Central ERP. 
         <br/><br/> <br/><br/><br/>
         <span className="trust-text-span">Top company trust us<br/><br/></span>
         <img className="trustCompany-image" src={trustCompany}></img>
+        <br/><br/> <br/><br/><br/>
       </div>
   );
 

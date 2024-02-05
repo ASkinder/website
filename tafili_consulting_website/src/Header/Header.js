@@ -33,7 +33,7 @@ function Header() {
                         <ul id="menu">
                             <li><a href="#services">Services</a></li>
                             <li><a href="#sectors">Sectors</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="contact">Contact</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -47,7 +47,7 @@ function Header() {
                     <ul id="menu">
                         <li><a href="#services">Services</a></li>
                         <li><a href="#sectors">Sectors</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="contact">Contact</a></li>
                     </ul>
                 </div>
             </header>

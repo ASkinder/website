@@ -1,0 +1,29 @@
+.contactPart1 {
+
+    background-color:rgba(50.79479277133942, 74.60208848118782, 159.00974839925766, 1);
+    width:auto;
+    height:478px;
+
+}
+
+.touch { 
+	color:rgba(255, 255, 255, 1);
+	width:402px;
+	height:66px;
+	font-family:Sofia Pro;
+	text-align:left;
+	font-size:64px;
+	letter-spacing:-5;
+	line-height:px;
+}
+
+.text { 
+	color:rgba(236.00000113248825, 236.00000113248825, 254.00000005960464, 1);
+	width:448px;
+	height:33px;
+	font-family:Sofia Pro;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:-2;
+	line-height:px;
+}

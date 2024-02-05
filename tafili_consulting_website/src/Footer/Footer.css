@@ -1,24 +1,70 @@
 .ei39_1037_105_619 { 
-	background-color:rgba(250.00000029802322, 250.00000029802322, 250.00000029802322, 1);
-	width:1462px;
-	height:454px;
+    background-color: rgba(250.00000029802322, 250.00000029802322, 250.00000029802322, 1);
+    width: 100%; /* Modifier la largeur en pourcentage */
+    height: auto;
+    display: flex;
+    justify-content: space-between; /* Répartition égale entre les enfants */
+    align-items: center; /* Alignement vertical au centre */
 }
+
 .e39_1056 { 
-	width:484px;
-	height:265px;
-	border-top-left-radius:32px;
-	border-top-right-radius:32px;
-	border-bottom-left-radius:32px;
-	border-bottom-right-radius:32px;
-	background-image:url(../Img/LogoTafili.png);
-	background-repeat:no-repeat;
-	background-size:cover;
+    width: 484px;
+    height: 265px;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    background-image: url(../Img/LogoTafili.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 85px; /* Marge à gauche pour séparer du bord gauche */
 }
 
-.ellipse_1038 { 
-	border-radius:500px;
-	background-color:rgba(101.00000157952309, 31.000000052154064, 255, 1);
-	width:64px;
-	height:64px;
+.footer-part2 {
+    display: flex;
+    flex-direction: column; /* Alignement vertical des éléments */
+    align-items: flex-end; /* Alignement à droite */
+    margin-right: 100px; /* Marge à droite pour séparer du bord droit */
 }
 
+.address,
+.email,
+.phone {
+    display: flex;
+    align-items: center; /* Alignement vertical des éléments */
+    margin-bottom: 15px; /* Espacement entre les lignes */
+}
+
+h1,
+p {
+    margin-right: 300px; /* Marge à droite pour séparer le texte de l'image */
+	color: black;
+}
+
+.address h1,
+.email h1,
+.phone h1 {
+    font-size: 28px; /* Augmenter la taille du titre */
+}
+
+.address p,
+.email p,
+.phone p {
+    font-size: 24px; /* Augmenter la taille du paragraphe */
+}
+
+
+.address img,
+.email img,
+.phone img {
+    width: 68px; /* Modifier la largeur de l'image selon vos besoins */
+    height: auto; /* Maintenir le ratio hauteur/largeur */
+	margin-right: 20px;
+}
+
+.email {
+	margin-right: 78px;
+}
+.phone {
+	margin-right: 164px;
+}

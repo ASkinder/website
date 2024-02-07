@@ -4,34 +4,36 @@ import './Contact.css'
 function Contact() {
   return (
     <div className="Contact">
-      <div class="contactPart1">
-        <span class="touch">Get in touch.</span>
-        <span class="contact_text">Our team would be love to hear from you!</span>
+      <div className="contactPart1">
+        <span className="touch">Get in touch.</span><br/>
+        <span className="contact_text">Our team would be love to hear from you!</span>
       </div>
-      <div class="contact_cadre">
-        <span  class="contact_name">Your name</span>
-        <input class="name_input"></input>
-        <br/>
-        <span  class="contact_email">Email address</span>
-        <input class="email_input>"></input>
-        <br/>
-        <span  class="contact_company">Company (optionnal)</span>
-        <input class="company_input>"></input>
-        <br/>
-        <span  class="contact_phone">Phone number (optionnal)</span>
-        <input class="phone_input>"></input>
-        <br/>
-        <span  class="contact_subject">Subject</span>
-        <input class="subject_input>"></input>
-        <br/>
-        <span  class="contact_message">Message</span>
-        <input class="message_input>"></input>
-        
-      </div>
-      <p>
-        Contact
-      </p>
-
+        <div className="contact_cadre">
+            <br/>
+            <span className="contact_name">Your name</span><br/>
+            <input className="name_input"></input>
+            <br/>
+            <span className="contact_email">Email address</span><br/>
+            <input className="email_input>"></input>
+            <br/>
+            <span className="contact_company">Company (optionnal)</span><br/>
+            <input className="company_input>"></input>
+            <br/>
+            <span className="contact_phone">Phone number (optionnal)</span><br/>
+            <input className="phone_input>"></input>
+            <br/>
+            <span className="contact_subject">Subject</span><br/>
+            <input className="subject_input>"></input>
+            <br/>
+            <span className="contact_message">Message</span><br/>
+            <input className="message_input>"></input>
+            <br/> <br/>
+            <div className="v61_598"><span className="v61_599">Send</span></div>
+            <br/> <br/> <br/>
+        </div>
+        <div className="contactPart2">
+            <br/>
+        </div>
     </div>
   );
 }

@@ -296,7 +296,7 @@ Enjoy all the features of NAV on the Cloud with Microsoft Business Central ERP. 
         </div>
         <br/><br/> <br/><br/><br/>
         <span className="trust-text-span">Top company trust us<br/><br/></span>
-        <img className="trustCompany-image" src={trustCompany}></img>
+        <img className="trustCompany-image" src={trustCompany} alt={"trusted Companies"}></img>
         <br/><br/> <br/><br/><br/>
       </div>
   );

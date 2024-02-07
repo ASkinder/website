@@ -31,9 +31,9 @@ function Header() {
                         </div>
 
                         <ul id="menu">
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#sectors">Sectors</a></li>
-                            <li><a href="contact">Contact</a></li>
+                            <li><a href="/home/#services">Services</a></li>
+                            <li><a href="/home/#sectors">Sectors</a></li>
+                            <li><a href="/contact">Contact</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -45,9 +45,9 @@ function Header() {
 
                 <div className="overlay-menu" style={{ transform: isMenuOpen ? 'translateX(0%)' : 'translateX(-100%)' }}>
                     <ul id="menu">
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#sectors">Sectors</a></li>
-                        <li><a href="contact">Contact</a></li>
+                        <li><a href="/home/#services">Services</a></li>
+                        <li><a href="/home/#sectors">Sectors</a></li>
+                        <li><a href="/contact">Contact</a></li>
                     </ul>
                 </div>
             </header>

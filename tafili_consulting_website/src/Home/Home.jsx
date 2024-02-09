@@ -62,9 +62,8 @@ function Home() {
                 Central
               </div>
               <br/>
-              <div className="business">The ERP software Business Central is a ready-to-use ERP solution for large enterprises, mid-sized companies and SMEs that want to start their digital transformation. With tools like Microsoft Flow and PowerApps as well as various applications offered in Microsoft AppSource, this solution easily adapts to the requirements of your business.
-
-Enjoy all the features of NAV on the Cloud with Microsoft Business Central ERP. By connecting the systems and processes, this all-in-one solution ensures, from a single centralized platform, the management of goods, customers, sales and financial accounting.
+              <div className="business">
+                "Business Central is an ERP solution for businesses of all sizes, offering tools like Microsoft Flow, PowerApps, and apps from Microsoft AppSource. It seamlessly adapts to your needs, providing the features of NAV in the Cloud. With centralized management of goods, customers, sales, and financials, it kickstarts digital transformation."
               </div>
             </div>
 
@@ -83,12 +82,7 @@ Enjoy all the features of NAV on the Cloud with Microsoft Business Central ERP. 
             <br/>
             <div className="yetoo">Yetoo</div>
             <br/>
-            <div className="yetoo-text">"Yetoo is a web application that provides a decision platform with dashboards,
-              financial reporting and more. With Yetoo, you can access, analyze and visualize your data in real time,
-              and make informed decisions based on insights and recommendations. Whether you need to monitor your
-              performance, optimize your processes, or forecast your outcomes, Yetoo has the tools and features you
-              need. Yetoo is easy to use, flexible and scalable, and integrates with your existing systems and
-              applications. Try Yetoo today and discover the power of data-driven decision making"
+            <div className="yetoo-text">"Yetoo is a web app for real-time data analysis and decision-making. It offers dashboards, financial reporting, and tools for performance monitoring and optimization. Flexible and user-friendly, Yetoo integrates with existing systems. Try it now for data-driven decisions."
             </div>
 
           </div>

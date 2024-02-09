@@ -3,13 +3,12 @@
     background-color:rgba(50.79479277133942, 74.60208848118782, 159.00974839925766, 1);
     width:auto;
     height:478px;
-
 }
 .contactPart2 {
 	position: relative;
 	background: #dfdfdf;
 	width:auto;
-	height:478px;
+	height:500px;
 	z-index: 0;
 }
 .touch { 
@@ -22,7 +21,7 @@
 	letter-spacing:5px;
 	line-height:66px;
 	position: absolute;
-	left: 350px; /* Ajustement de la position horizontale */
+	left: 150px; /* Ajustement de la position horizontale */
 	bottom: 200px; /* Ajustement de la position verticale */
 }
 
@@ -36,7 +35,7 @@
 	letter-spacing:2px;
 	line-height:33px;
 	position: absolute;
-	left: 350px; /* Ajustement de la position horizontale */
+	left: 150px; /* Ajustement de la position horizontale */
 	bottom: 160px; /* Ajustement de la position verticale */
 }
 
@@ -48,7 +47,7 @@
 	border-radius:24px;
 	position: absolute;
 	top: 215px;
-	left: 70%;
+	right: -10%;
 	transform: translateX(-50%);
 	z-index: 4;
 	display: grid;

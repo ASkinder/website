@@ -10,10 +10,7 @@
 .e39_1056 { 
     width: 484px;
     height: 265px;
-    border-top-left-radius: 32px;
-    border-top-right-radius: 32px;
-    border-bottom-left-radius: 32px;
-    border-bottom-right-radius: 32px;
+    border-radius: 32px;
     background-image: url(../Img/LogoTafili.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -24,7 +21,7 @@
     display: flex;
     flex-direction: column; /* Alignement vertical des éléments */
     align-items: flex-end; /* Alignement à droite */
-    margin-right: 100px; /* Marge à droite pour séparer du bord droit */
+    margin-right: -70px; /* Marge à droite pour séparer du bord droit */
 }
 
 .address,
@@ -67,4 +64,41 @@ p {
 }
 .phone {
 	margin-right: 164px;
+}
+
+@media (max-width: 1700px) {
+    .footer-part2 {
+        margin-right: -70px;
+    }
+    .address h1,
+    .email h1,
+    .phone h1 {
+        font-size: 18px;
+    }
+
+    .address p,
+    .email p,
+    .phone p {
+        font-size: 14px;
+    }
+
+    .address img,
+    .email img,
+    .phone img {
+        width: 68px;
+        height: auto;
+        margin-right: 20px;
+    }
+
+    .email {
+        margin-right: 48px;
+    }
+    .phone {
+        margin-right: 104px;
+    }
+    
+    .e39_1056 {
+        width: 350px;
+        height: 200px;
+    }
 }

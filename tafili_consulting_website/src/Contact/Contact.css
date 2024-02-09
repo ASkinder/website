@@ -1,3 +1,4 @@
+
 .contactPart1 {
 	position: relative;
     background-color:rgba(50.79479277133942, 74.60208848118782, 159.00974839925766, 1);
@@ -116,4 +117,25 @@
 	font-size: 16px;
 	opacity: 1;
 	text-align: center;
+}
+
+
+
+
+@media (max-width: 1400px) {
+	.contact_cadre {
+		top: 315px;
+		right: 0%;
+	}
+	.touch {
+		text-align:center;
+		left: 370px;
+		bottom: 350px;
+	}
+
+	.contact_text {
+		text-align:center;
+		left: 350px;
+		bottom: 300px;
+	}
 }

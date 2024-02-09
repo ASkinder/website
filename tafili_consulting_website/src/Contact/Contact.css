@@ -93,30 +93,23 @@
 }
 
 
-.v61_598 {
+.buttonSend {
 	width: 110px;
-	height: 18px;
-	background: rgba(101,31,255,1);
-	padding: 13px 25px;
-	opacity: 1;
-	position: relative;
-	top: -20%;
-	left: 60%;
-	border-radius: 12px;
-
-	overflow: hidden;
+	background: rgba(101, 31, 255, 1);
+	color: rgba(255, 255, 255, 1);
+	border-radius: 30px;
+	font-size: 20px;
+	margin-left: 50px;
+	cursor: pointer; /* Ajout du curseur pointer */
+	transition: background-color 0.3s ease; /* Animation de transition pour la couleur de fond */
 }
-.v61_599 {
-	width: 113px;
-	color: rgba(255,255,255,1);
-	position: absolute;
-	top: -2px;
-	left: 19px;
-	font-family: Sofia Pro, serif;
-	font-weight: Bold;
-	font-size: 16px;
-	opacity: 1;
-	text-align: center;
+
+.buttonSend:hover {
+	background-color: rgb(49, 6, 141); /* Changement de couleur de fond au survol */
+}
+
+.buttonSend:active {
+	background-color: rgba(80, 10, 220, 1); /* Changement de couleur de fond lors du clic */
 }
 
 

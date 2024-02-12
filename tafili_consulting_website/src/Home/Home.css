@@ -1,46 +1,36 @@
-.slides-navigation {
-    display: flex;
-    justify-content: center;
-    /* Centrer horizontalement */
-    align-items: center;
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
 }
 
-.click-area {
-    cursor: pointer;
-    padding: 5px;
-    /* Réduire le rembourrage */
+.carousel-caption h3 {
+    position: absolute;
+    top: -180%;
+    left: 50%;
+    font-size: 20px;
+    transform: translate(-50%, -50%);
+    text-align: center; /* Pour centrer le texte horizontalement */
+    color: white; /* Couleur du texte */
+    padding: 20px; /* Espacement intérieur */
 }
 
-.arrow {
-    width: 30px;
-    /* Taille des flèches */
-    height: 30px;
-    margin: 0 10px;
-    /* Ajouter une marge entre les flèches */
+.carousel-caption p {
+    position: absolute;
+    top: -80%;
+    left: 50%;
+    width: 150%;
+    font-size: 16px;
+    transform: translate(-50%, -50%);
+    text-align: center; /* Pour centrer le texte horizontalement */
+    padding: 20px; /* Espacement intérieur */
 }
 
-.slide-list img {
-    width: 100%;
-    height: auto;
-    border-radius: 30px;
-    /* Ajouter une bordure arrondie */
-}
-
-
-@media (max-width: 825px) {
-    .slide-list img {
-        max-width: 100%;
-        /* Remplir la largeur de l'écran */
-        height: auto;
-    }
-
-    .arrow {
-        width: 15px;
-        /* Taille des flèches */
-        height: 15px;
-        margin: 0 10px;
-        /* Ajouter une marge entre les flèches */
-    }
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px; /* Ajustez la distance du bas selon vos besoins */
+    left: 35%; /* Déplace les indicateurs vers le centre */
+    transform: translateX(-50%); /* Centre les indicateurs horizontalement */
 }
 
 /* -------------------- HELPING TEXT --------------------------*/
@@ -75,14 +65,6 @@
     font-style: italic;
 }
 
-.helping-text-span2 {
-    color: #000000;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 16px;
-    line-height: 130%;
-    font-weight: 400;
-}
-
 .helping-text-span3 {
     color: #000000;
     font-family: "Inter-Light", sans-serif;
@@ -104,11 +86,6 @@
 
     .helping-text-span {
         font-size: 24px;
-        /* Réduire la taille de la police */
-    }
-
-    .helping-text-span2 {
-        font-size: 14px;
         /* Réduire la taille de la police */
     }
 
@@ -539,7 +516,7 @@
     align-items: center;
     margin-top: 20px;
     width: 80%;
-    margin-left: 230px;
+    margin-left: 170px;
 }
 
 
@@ -626,7 +603,6 @@
     font-size: 48px;
     line-height: 130%;
     font-weight: 300;
-    font-style: bold;
 }
 
 .trustCompany-image {

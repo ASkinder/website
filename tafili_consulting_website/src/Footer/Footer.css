@@ -29,7 +29,7 @@
 .phone {
     display: flex;
     align-items: center; /* Alignement vertical des éléments */
-    margin-bottom: 15px; /* Espacement entre les lignes */
+    margin-bottom: 12px; /* Espacement entre les lignes */
 }
 
 h1,
@@ -60,10 +60,13 @@ p {
 }
 
 .email {
-	margin-right: 78px;
+	margin-right: 278px;
 }
 .phone {
-	margin-right: 164px;
+	margin-right: 364px;
+}
+.address {
+    margin-right: 200px;
 }
 
 @media (max-width: 1700px) {
@@ -91,10 +94,13 @@ p {
     }
 
     .email {
-        margin-right: 48px;
+        margin-right: 248px;
     }
     .phone {
-        margin-right: 104px;
+        margin-right: 297px;
+    }
+    .address {
+        margin-right: 198px;
     }
 
     .e39_1056 {

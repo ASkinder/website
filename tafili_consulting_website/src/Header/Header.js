@@ -1,24 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './Header.css';
 import logo from '../Img/LogoTafili.png';
 
 function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    useEffect(() => {
-        const menuIcon = document.querySelector('.menuIcon');
-     
-        const handleMenuToggle = () => {
-            setIsMenuOpen(!isMenuOpen);
-        };
 
-        menuIcon.addEventListener('click', handleMenuToggle);
-
-        return () => {
-            menuIcon.removeEventListener('click', handleMenuToggle);
-        };
-    }, [isMenuOpen]);
-
+    const handleMenuToggle = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
     return (
         <div className="Header">
             <header className="App-header">
@@ -27,10 +17,10 @@ function Header() {
                     <div className="nav-wrapper">
 
                         <div className="logo">
-                            <a href="/"> <img src={logo} alt="Logo Tafili" id='imageLogo' /></a>
+                            <a href="/"> <img src={logo} alt="Logo Tafili" id='imageLogo'/></a>
                         </div>
 
-                        <ul id="menu">
+                        <ul id="menu" className={isMenuOpen ? 'open' : ''}>
                             <li><a href="/home/#services">Services</a></li>
                             <li><a href="/home/#sectors">Sectors</a></li>
                             <li><a href="/contact">Contact</a></li>
@@ -38,12 +28,12 @@ function Header() {
                     </div>
                 </nav>
 
-                <div className={`menuIcon ${isMenuOpen ? 'toggle' : ''}`}>
+                <div className={`menuIcon ${isMenuOpen ? 'toggle' : ''}`} onClick={handleMenuToggle}>
                     <span className="icon icon-bars"></span>
                     <span className="icon icon-bars overlay"></span>
                 </div>
 
-                <div className="overlay-menu" style={{ transform: isMenuOpen ? 'translateX(0%)' : 'translateX(-100%)' }}>
+                <div className="overlay-menu" style={{transform: isMenuOpen ? 'translateX(0%)' : 'translateX(-100%)'}}>
                     <ul id="menu">
                         <li><a href="/home/#services">Services</a></li>
                         <li><a href="/home/#sectors">Sectors</a></li>

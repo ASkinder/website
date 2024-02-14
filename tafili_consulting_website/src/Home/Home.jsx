@@ -5,7 +5,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import office1 from '../Img/office1.png';
 import office2 from '../Img/office2.png';
 import office3 from '../Img/office3.png';
-import trustCompany from '../Img/TrustCompany.png';
+import trustCompany from '../Img/companies.png';
 import './Home.css';
 
 function Home() {

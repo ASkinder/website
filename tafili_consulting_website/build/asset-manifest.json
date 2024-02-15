@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.82ee3efc.chunk.css",
+    "main.js": "/static/js/main.e5eb21c2.chunk.js",
+    "main.js.map": "/static/js/main.e5eb21c2.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.95973325.js",
+    "runtime-main.js.map": "/static/js/runtime-main.95973325.js.map",
+    "static/js/2.8a398771.chunk.js": "/static/js/2.8a398771.chunk.js",
+    "static/js/2.8a398771.chunk.js.map": "/static/js/2.8a398771.chunk.js.map",
+    "static/js/3.7761cbeb.chunk.js": "/static/js/3.7761cbeb.chunk.js",
+    "static/js/3.7761cbeb.chunk.js.map": "/static/js/3.7761cbeb.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.0bcb8db5ab78d42dcecd7f64a3daffde.js": "/precache-manifest.0bcb8db5ab78d42dcecd7f64a3daffde.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.82ee3efc.chunk.css.map": "/static/css/main.82ee3efc.chunk.css.map",
+    "static/js/2.8a398771.chunk.js.LICENSE.txt": "/static/js/2.8a398771.chunk.js.LICENSE.txt",
+    "static/media/Footer.css": "/static/media/LogoTafili.25a9d9c0.png",
+    "static/media/TrustCompany.png": "/static/media/TrustCompany.e48b6c89.png",
+    "static/media/buildingCam.jpg": "/static/media/buildingCam.43b1c5f0.jpg",
+    "static/media/businessCentral.jpg": "/static/media/businessCentral.89a6a09e.jpg",
+    "static/media/yetoo_illu2.jpg": "/static/media/yetoo_illu2.29490e69.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.95973325.js",
+    "static/js/2.8a398771.chunk.js",
+    "static/css/main.82ee3efc.chunk.css",
+    "static/js/main.e5eb21c2.chunk.js"
+  ]
+}

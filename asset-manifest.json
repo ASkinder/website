@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/website/static/css/main.c597d1f2.chunk.css",
+    "main.js": "/website/static/js/main.a841c614.chunk.js",
+    "main.js.map": "/website/static/js/main.a841c614.chunk.js.map",
+    "runtime-main.js": "/website/static/js/runtime-main.3969564f.js",
+    "runtime-main.js.map": "/website/static/js/runtime-main.3969564f.js.map",
+    "static/css/2.cc82f8aa.chunk.css": "/website/static/css/2.cc82f8aa.chunk.css",
+    "static/js/2.6752b6d9.chunk.js": "/website/static/js/2.6752b6d9.chunk.js",
+    "static/js/2.6752b6d9.chunk.js.map": "/website/static/js/2.6752b6d9.chunk.js.map",
+    "static/js/3.39a7989e.chunk.js": "/website/static/js/3.39a7989e.chunk.js",
+    "static/js/3.39a7989e.chunk.js.map": "/website/static/js/3.39a7989e.chunk.js.map",
+    "index.html": "/website/index.html",
+    "precache-manifest.1a863bf010c7b9c7469f5cd0f5df978e.js": "/website/precache-manifest.1a863bf010c7b9c7469f5cd0f5df978e.js",
+    "service-worker.js": "/website/service-worker.js",
+    "static/css/2.cc82f8aa.chunk.css.map": "/website/static/css/2.cc82f8aa.chunk.css.map",
+    "static/css/main.c597d1f2.chunk.css.map": "/website/static/css/main.c597d1f2.chunk.css.map",
+    "static/js/2.6752b6d9.chunk.js.LICENSE.txt": "/website/static/js/2.6752b6d9.chunk.js.LICENSE.txt",
+    "static/media/Footer.css": "/website/static/media/LogoTafili.25a9d9c0.png",
+    "static/media/MicrosoftBusinessCentral.mp4": "/website/static/media/MicrosoftBusinessCentral.f94bf897.mp4",
+    "static/media/companies.png": "/website/static/media/companies.6736374d.png",
+    "static/media/office1.png": "/website/static/media/office1.999979e6.png",
+    "static/media/office2.png": "/website/static/media/office2.8df94f56.png",
+    "static/media/office3.png": "/website/static/media/office3.4541f145.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3969564f.js",
+    "static/css/2.cc82f8aa.chunk.css",
+    "static/js/2.6752b6d9.chunk.js",
+    "static/css/main.c597d1f2.chunk.css",
+    "static/js/main.a841c614.chunk.js"
+  ]
+}

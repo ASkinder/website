@@ -7,6 +7,7 @@ import office2 from '../Img/office2.png';
 import office3 from '../Img/office3.png';
 import trustCompany from '../Img/companies.png';
 import './Home.css';
+import {Link} from "react-router-dom";
 
 function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -43,10 +44,9 @@ function Home() {
             <div className="rectangles">
               <div className="rectangle-139">
                 <br/>
-                <div className="microsoft-business-central">Microsoft Business Central : ERP Dynamics 365 Business
-                  Central
-                </div>
-                <br/>
+                <Link to="/mbc" className="microsoft-business-central">Microsoft Business Central : ERP Dynamics 365
+                  Business Central</Link>
+                <br/><br/>
                 <div className="business">
                   "Business Central is an ERP solution for businesses of all sizes, offering tools like Microsoft Flow,
                   PowerApps, and apps from Microsoft AppSource. It seamlessly adapts to your needs, providing the

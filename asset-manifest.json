@@ -1,33 +1,21 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.c597d1f2.chunk.css",
-    "main.js": "/website/static/js/main.b949b0a4.chunk.js",
-    "main.js.map": "/website/static/js/main.b949b0a4.chunk.js.map",
-    "runtime-main.js": "/website/static/js/runtime-main.3969564f.js",
-    "runtime-main.js.map": "/website/static/js/runtime-main.3969564f.js.map",
-    "static/css/2.cc82f8aa.chunk.css": "/website/static/css/2.cc82f8aa.chunk.css",
-    "static/js/2.6752b6d9.chunk.js": "/website/static/js/2.6752b6d9.chunk.js",
-    "static/js/2.6752b6d9.chunk.js.map": "/website/static/js/2.6752b6d9.chunk.js.map",
-    "static/js/3.39a7989e.chunk.js": "/website/static/js/3.39a7989e.chunk.js",
-    "static/js/3.39a7989e.chunk.js.map": "/website/static/js/3.39a7989e.chunk.js.map",
+    "main.css": "/website/static/css/main.2c116988.css",
+    "main.js": "/website/static/js/main.cd4e3b89.js",
+    "static/js/845.3f321f55.chunk.js": "/website/static/js/845.3f321f55.chunk.js",
+    "static/media/MicrosoftBusinessCentral.mp4": "/website/static/media/MicrosoftBusinessCentral.06cf702c7b6f9d7e6a33.mp4",
+    "static/media/companies.png": "/website/static/media/companies.7eb9359a62b0032f0107.png",
+    "static/media/office2.png": "/website/static/media/office2.29c0e8ac324d6d9ae26c.png",
+    "static/media/office1.png": "/website/static/media/office1.48190d0ef73992dc4ca4.png",
+    "static/media/office3.png": "/website/static/media/office3.a7a5a66b4cdbba0b239c.png",
+    "static/media/LogoTafili.png": "/website/static/media/LogoTafili.80840909d9f412f4597c.png",
     "index.html": "/website/index.html",
-    "precache-manifest.052e71bb4dfdca761895f554f4189e13.js": "/website/precache-manifest.052e71bb4dfdca761895f554f4189e13.js",
-    "service-worker.js": "/website/service-worker.js",
-    "static/css/2.cc82f8aa.chunk.css.map": "/website/static/css/2.cc82f8aa.chunk.css.map",
-    "static/css/main.c597d1f2.chunk.css.map": "/website/static/css/main.c597d1f2.chunk.css.map",
-    "static/js/2.6752b6d9.chunk.js.LICENSE.txt": "/website/static/js/2.6752b6d9.chunk.js.LICENSE.txt",
-    "static/media/Footer.css": "/website/static/media/LogoTafili.25a9d9c0.png",
-    "static/media/MicrosoftBusinessCentral.mp4": "/website/static/media/MicrosoftBusinessCentral.f94bf897.mp4",
-    "static/media/companies.png": "/website/static/media/companies.6736374d.png",
-    "static/media/office1.png": "/website/static/media/office1.999979e6.png",
-    "static/media/office2.png": "/website/static/media/office2.8df94f56.png",
-    "static/media/office3.png": "/website/static/media/office3.4541f145.png"
+    "main.2c116988.css.map": "/website/static/css/main.2c116988.css.map",
+    "main.cd4e3b89.js.map": "/website/static/js/main.cd4e3b89.js.map",
+    "845.3f321f55.chunk.js.map": "/website/static/js/845.3f321f55.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.3969564f.js",
-    "static/css/2.cc82f8aa.chunk.css",
-    "static/js/2.6752b6d9.chunk.js",
-    "static/css/main.c597d1f2.chunk.css",
-    "static/js/main.b949b0a4.chunk.js"
+    "static/css/main.2c116988.css",
+    "static/js/main.cd4e3b89.js"
   ]
 }

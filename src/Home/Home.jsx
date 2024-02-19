@@ -5,7 +5,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import office1 from '../Img/office1.png';
 import office2 from '../Img/office2.png';
 import office3 from '../Img/office3.png';
-import trustCompany from '../Img/companies.png';
+import trustCompany from '../Img/TrustCompany.png';
 import './Home.css';
 import {Link} from "react-router-dom";
 
@@ -15,7 +15,7 @@ function Home() {
 
     return (
         <div className="Home">
-          <br/><br/><br/>
+          <br/><br/>
           <Carousel activeIndex={currentSlide} onSelect={(index) => setCurrentSlide(index)}
                     style={{width: '68%', margin: 'auto',  zIndex: '1'}}>
             {slides.map((slide, index) => (

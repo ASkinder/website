@@ -5,6 +5,12 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import office1 from '../Img/office1.png';
 import office2 from '../Img/office2.png';
 import office3 from '../Img/office3.png';
+import icon1 from '../Img/icon1.png';
+import icon2 from '../Img/icon2.png';
+import icon3 from '../Img/icon3.png';
+import mbc from '../Img/mbc.png';
+import finance from '../Img/finance.jpg';
+import yetoo from '../Img/yetoo.jpeg';
 import trustCompany from '../Img/TrustCompany.png';
 import './Home.css';
 import {Link} from "react-router-dom";
@@ -15,9 +21,11 @@ function Home() {
 
     return (
         <div className="Home">
-          <br/><br/>
+          <br/><br/> <br/><br/>
+          <h1 className="home-text1">Our mission is to deliver the suitable solution for you finance functions</h1>
+          <br/><br/> <br/><br/>
           <Carousel activeIndex={currentSlide} onSelect={(index) => setCurrentSlide(index)}
-                    style={{width: '68%', margin: 'auto',  zIndex: '1'}}>
+                    style={{width: '68%', margin: 'auto', zIndex: '1'}}>
             {slides.map((slide, index) => (
                 <Carousel.Item key={index}>
                   <img className="d-block w-100" src={slide} alt={`Slide ${index + 1}`}/>
@@ -30,55 +38,76 @@ function Home() {
           </Carousel>
 
           <br/><br/> <br/>
-
-
-          <div className="helping-text" id="services">
-        <span>
-          <span className="helping-text-span">Contributing today, shaping tomorrow<br/><br/></span>
-          <span className="helping-text-span3">Our mission is to deliver the best solutions to our clients in their finance functions. We support them by providing highly-qualified and hands-on consultants to face a lack of resources, to carry out their projects and by reviewing and optimizing their processes.</span>
-        </span>
-          </div>
           <br/><br/>
-
-          <div className="container">
-            <div className="rectangles">
-              <div className="rectangle-139">
-                <br/>
-                <Link to="/mbc" className="microsoft-business-central">Microsoft Business Central : ERP Dynamics 365
-                  Business Central</Link>
-                <br/><br/>
-                <div className="business">
-                  "Business Central is an ERP solution for businesses of all sizes, offering tools like Microsoft Flow,
-                  PowerApps, and apps from Microsoft AppSource. It seamlessly adapts to your needs, providing the
-                  features
-                  of NAV in the Cloud. With centralized management of goods, customers, sales, and financials, it
-                  kickstarts digital transformation."
-                </div>
-              </div>
-
-              <div className="rectangle-139">
-                <br/>
-                <div className="financial-it-consultant">Financial & IT Consultants</div>
-                <br/>
-                <div className="financial">"Financial analysis involves interpreting financial data to evaluate a
-                  company's performance and make informed decisions. This includes assessing financial statements,
-                  ratios,
-                  and metrics to gauge profitability, liquidity, and overall financial health."
-                </div>
+          <h2 className="supportYou">We support you</h2>
+          <br/> <br/> <br/>
+          <div className="support-section">
+            <div className="support-item">
+              <p>by providing highly qualified</p>
+              <img src={icon1} alt="Icone 1"/>
+            </div>
+            <div className="support-item">
+              <p>carry out your project</p>
+              <img src={icon2} alt="Icone 2"/>
+            </div>
+            <div className="support-item">
+              <p>optimize your plans</p>
+              <img src={icon3} alt="Icone 3"/>
+            </div>
+          </div>
+          <br/><br/> <br/><br/> <br/><br/>
+          <hr className="horizontal-line"/>
+          <br/><br/>
+          <div className="content">
+            <div className="image-container">
+              <img src={mbc} alt="Image 1"/>
+              <br/><br/><br/>
+            </div>
+            <div className="text-container">
+              <Link to="/mbc" className="support-link">Microsoft Business Central : ERP Dynamics 365 Business
+                Central</Link><br/><br/>
+              <div className="text-support">
+                "Business Central is an ERP solution for businesses of all sizes, offering tools like Microsoft Flow,
+                PowerApps, and apps from Microsoft AppSource. It seamlessly adapts to your needs, providing the features
+                of NAV in the Cloud. With centralized management of goods, customers, sales, and financials, it
+                kickstarts digital transformation."
               </div>
             </div>
-
-            <div className="rectangle-139">
-              <br/>
-              <div className="yetoo">Yetoo</div>
-              <br/>
-              <div className="yetoo-text">"Yetoo is a web app for real-time data analysis and decision-making. It offers
+          </div>
+          <hr className="horizontal-line"/>
+          <br/><br/>
+          <div className="content">
+            <div className="image-container">
+              <img src={finance} alt="Image 2"/>
+              <br/><br/><br/>
+            </div>
+            <div className="text-container">
+              <Link to="/" className="microsoft-business-central">Financial & IT Consultants</Link><br/><br/>
+              <div className="text-support">"Financial analysis involves interpreting financial data to evaluate a
+                company's performance and make informed decisions. This includes assessing financial statements,
+                ratios,
+                and metrics to gauge profitability, liquidity, and overall financial health."
+              </div>
+            </div>
+          </div>
+          <hr className="horizontal-line"/>
+          <br/><br/>
+          <div className="content">
+            <div className="image-container">
+              <img src={yetoo} alt="Image 3"/>
+              <br/><br/><br/>
+            </div>
+            <div className="text-container">
+              <Link to="/" className="microsoft-business-central">Yetoo</Link><br/><br/>
+              <div className="text-support">"Yetoo is a web app for real-time data analysis and decision-making. It
+                offers
                 dashboards, financial reporting, and tools for performance monitoring and optimization. Flexible and
                 user-friendly, Yetoo integrates with existing systems. Try it now for data-driven decisions."
               </div>
-
             </div>
           </div>
+          <hr className="horizontal-line"/>
+          
 
 
           <br/><br/><br/>

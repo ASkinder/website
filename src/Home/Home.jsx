@@ -43,7 +43,7 @@ function Home() {
           <br/> <br/> <br/>
           <div className="support-section">
             <div className="support-item">
-              <p>by providing highly qualified</p>
+              <p>by providing highly qualified advices</p>
               <img src={icon1} alt="Icone 1"/>
             </div>
             <div className="support-item">
@@ -112,7 +112,7 @@ function Home() {
 
           <br/><br/><br/>
 
-        
+
           <br/><br/> <br/><br/><br/>
           <span className="trust-text-span">Top company trust us<br/><br/></span>
           <img className="trustCompany-image" src={trustCompany} alt={"trusted Companies"}></img>

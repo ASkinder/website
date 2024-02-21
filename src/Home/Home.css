@@ -50,7 +50,41 @@
     transform: translateX(-50%); /* Centre les indicateurs horizontalement */
 }
 
-/* -------------------- HELPING TEXT --------------------------*/
+
+@media (max-width: 1410px) {
+    .carousel-caption h3 {
+        font-size: 30px;
+    }
+    .carousel-caption p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .home-text1 {
+        font-size: 35px;
+    }
+    .carousel-caption h3 {
+        font-size: 20px;
+    }
+    .carousel-caption p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 850px) {
+    .home-text1 {
+        font-size: 25px;
+    }
+    .carousel-caption h3 {
+        font-size: 20px;
+    }
+    .carousel-caption p {
+        display: none;
+    }
+}
+
+/* -------------------- Support Section --------------------------*/
 .supportYou {
     margin: 0;
     font-family: 'Minerva Modern', sans-serif;
@@ -79,16 +113,8 @@
 }
 
 .support-item p {
-    margin: 0;
-}
-
-.support-item .icon {
-    display: block;
-    margin-top: 10px; /* Espacement entre la phrase et l'icône */
-}
-
-.support-item p {
-    margin: 0;
+    width: 50%;
+    margin-left: 25%;
     font-family: 'Minerva Modern', serif;
     font-style: normal;
     font-weight: 400;
@@ -99,6 +125,47 @@
 .support-item img {
     width: 70px; /* ajustez la taille selon vos besoins */
     height: auto; /* garde le ratio d'aspect */
+}
+
+@media (max-width: 1200px) {
+
+    .support-section {
+        flex-direction: column; /* Affichez les éléments en colonne pour les écrans plus petits */
+    }
+
+    .support-item {
+        border-right: none; /* Supprimez la bordure à droite pour que chaque élément occupe la largeur totale */
+        padding-right: 0; /* Supprimez l'espacement à droite */
+        text-align: center; /* Centrez le contenu */
+        margin-bottom: 40px; /* Ajoutez un espacement entre les éléments */
+        border-top: 4px solid #ccc; /* Ajoute une bordure à droite */
+    }
+
+    .support-item p {
+        width: auto; /* Réinitialisez la largeur */
+        margin-left: 25%; /* Réinitialisez la marge */
+    }
+
+    .support-item img {
+        width: 80px; /* Ajustez la taille de l'image selon vos besoins */
+        height: auto; /* Gardez le ratio d'aspect */
+        margin-left: 5%; /* Réinitialisez la marge */
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .support-item p {
+        width: 100%; /* Réinitialisez la largeur */
+        margin-left: 0; /* Réinitialisez la marge */
+    }
+}
+
+@media (max-width: 800px) {
+    .support-item p {
+        width: 100%; /* Réinitialisez la largeur */
+        margin-left: 0; /* Réinitialisez la marge */
+    }
 }
 
 .support-link {
@@ -152,568 +219,30 @@
 
 }
 
-
-
-
-.helping-text,
-.helping-text * {
-
-    box-sizing: border-box;
-}
-
-.helping-text {
-    color: #000000;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    max-width: 1068px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.helping-text-span {
-    color: #000000;
-    font-family: "Inter-LightItalic", sans-serif;
-    font-size: 48px;
-    line-height: 130%;
-    font-weight: 300;
-    font-style: italic;
-}
-
-.helping-text-span3 {
-    color: #000000;
-    font-family: "Inter-Light", sans-serif;
-    font-size: 24px;
-    line-height: 130%;
-    font-weight: 300;
-}
-
-@media (max-width: 825px) {
-    .helping-text {
-        width: 90%;
-        /* Ajuster la largeur pour qu'elle soit légèrement plus petite que l'écran */
-        max-width: 100%;
-        height: auto;
-        /* Ajuster la hauteur automatiquement */
-        padding: 20px;
-        /* Ajouter un peu d'espace autour du texte */
-    }
-
-    .helping-text-span {
-        font-size: 24px;
-        /* Réduire la taille de la police */
-    }
-
-    .helping-text-span3 {
-        font-size: 18px;
-        /* Réduire la taille de la police */
+@media (max-width: 1400px) {
+    .text-container {
+        margin-right: 10%;
     }
 }
 
-
-
-
-/* ------------- RECTANGLES -------------- */
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-}
-
-.rectangles {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-.rectangle-139,
-.rectangle-139 * {
-    box-sizing: border-box;
-}
-
-.rectangle-139 {
-    background: #ffffff;
-    border-radius: 24px;
-    height: 310px;
-    position: relative;
-    width: 650px;
-    padding: 20px;
-    margin: 0 10px;
-    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.02);
-    text-align: center;
-}
-
-.yetoo,
-.financial-it-consultant,
-.financial-it-consultant *,
-.microsoft-business-central,
-.microsoft-business-central *,
-.yetoo * {
-    box-sizing: border-box;
-    overflow: hidden;
-}
-
-.yetoo,
-.financial-it-consultant {
-    color: #000000;
-    text-align: center;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 28px;
-    line-height: 38px;
-    font-weight: 400;
-    position: relative;
-    width: 559px;
-    height: 40px;
-}
-
-.microsoft-business-central {
-    color: #000000;
-    text-align: center;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 28px;
-    line-height: 38px;
-    font-weight: 400;
-    position: relative;
-    width: 559px;
-    height: 80px;
-}
-.business,
-.financial,
-.financial *,
-.yetoo-text,
-.yetoo-text *,
-.business * {
-    box-sizing: border-box;
-}
-
-.business,
-.yetoo-text,
-.financial {
-    color: #000000;
-    text-align: center;
-    font-family: "Inter-LightItalic", sans-serif;
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 300;
-    font-style: italic;
-    position: relative;
-    width: 565px;
-    /* Vous pouvez ajuster la largeur selon vos besoins */
-    height: 135px;
-    overflow-wrap: break-word;
-    /* Permet au texte de se casser et d'aller à la ligne */
-}
-
-@media (max-width: 825px) {
-    .rectangle-139 {
-        width: auto;
-        /* Adapter la largeur automatiquement */
-        height: auto;
-        /* Adapter la hauteur automatiquement */
-        margin: 10px;
-        /* Ajouter de l'espace autour des rectangles */
+@media (max-width: 1100px) {
+    .image-container img {
+        width: 250px; /* Ajustez la largeur de l'image selon vos besoins */
+        height: auto; /* Pour conserver les proportions de l'image */
     }
-
-    .yetoo,
-    .microsoft-business-central,
-    .financial-it-consultant {
-        font-size: 24px;
-        /* Réduire la taille de la police */
-        line-height: 20px;
-        /* Ajuster la hauteur de ligne */
-        width: auto;
-        /* Adapter la largeur automatiquement */
+}
+@media (max-width: 950px) {
+    .image-container img {
+        display: none;
+    }
+    .text-container {
+        margin-right: 20%;
+    }
+    .text-support {
         text-align: center;
-        /* Centrer le texte */
-    }
-
-    .financial,
-    .business,
-    .yetoo-text {
-        font-size: 14px;
-        /* Réduire la taille de la police */
-        line-height: 20px;
-        /* Ajuster la hauteur de ligne */
-        width: auto;
-        /* Adapter la largeur automatiquement */
-        text-align: center;
-        /* Centrer le texte */
-    }
-
-    .rectangles {
-        flex-direction: column;
-        /* Afficher les rectangles en colonne */
-        align-items: center;
-        /* Centrer les éléments horizontalement */
+        margin: 0;
     }
 }
-
-
-/* ----------------------- Sector Text ------------------------*/
-
-.sector-text,
-.sector-text * {
-
-    box-sizing: border-box;
-}
-
-.sector-text {
-    color: #000000;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    max-width: 1068px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.sector-text-span {
-    color: #000000;
-    font-family: "Inter-LightItalic", sans-serif;
-    font-size: 48px;
-    line-height: 130%;
-    font-weight: 300;
-    font-style: italic;
-}
-
-.sector-text-span2 {
-    color: #000000;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 16px;
-    line-height: 130%;
-    font-weight: 400;
-}
-
-.sector-text-span3 {
-    color: #000000;
-    font-family: "Inter-Light", sans-serif;
-    font-size: 24px;
-    line-height: 130%;
-    font-weight: 300;
-}
-
-@media (max-width: 825px) {
-    .sector-text {
-        width: 90%;
-        /* Ajuster la largeur pour qu'elle soit légèrement plus petite que l'écran */
-        max-width: 100%;
-        height: auto;
-        /* Ajuster la hauteur automatiquement */
-        padding: 20px;
-        /* Ajouter un peu d'espace autour du texte */
-    }
-
-    .sector-text-span {
-        font-size: 24px;
-        /* Réduire la taille de la police */
-    }
-
-    .sector-text-span3 {
-        font-size: 18px;
-        /* Réduire la taille de la police */
-    }
-}
-
-
-
-
-/* ---------------- SECTOR -----------------*/
-
-.rectangle-sector,
-.rectangle-sector * {
-    box-sizing: border-box;
-}
-
-.rectangle-sector {
-    background: #ececfe;
-    border-radius: 24px;
-
-    position: relative;
-    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.02);
-    width: 280px;
-    height: 120px;
-
-    margin: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.ellipse-sector,
-.ellipse-sector * {
-    box-sizing: border-box;
-}
-
-.ellipse-sector {
-    background: #651fff;
-    border-radius: 50%;
-    width: 36px;
-    height: 36px;
-    position: relative;
-    margin-right: 10px;
-    display: flex; /* Pour centrer le contenu */
-    align-items: center; /* Pour centrer le contenu */
-    justify-content: center; /* Pour centrer le contenu */
-}
-
-.key-1,
-.key-1 * {
-    box-sizing: border-box;
-}
-
-.key-1 {
-    width: 16px;
-    height: 16px;
-    position: relative;
-    overflow: visible;
-}
-
-.industry,
-.industry * {
-    box-sizing: border-box;
-}
-
-.industry {
-    color: #000000;
-    text-align: left;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 24px;
-    line-height: 150%;
-    font-weight: 400;
-    position: relative;
-    width: 143px;
-    height: 28px;
-}
-
-.user-1,
-.user-1 * {
-    box-sizing: border-box;
-}
-
-.user-1 {
-    width: 14px;
-    height: 16px;
-    position: relative;
-    overflow: visible;
-}
-
-.finance,
-.finance * {
-    box-sizing: border-box;
-}
-
-.finance {
-    color: #000000;
-    text-align: left;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 24px;
-    line-height: 150%;
-    font-weight: 400;
-    position: relative;
-}
-
-
-.users-1,
-.users-1 * {
-    box-sizing: border-box;
-}
-
-.users-1 {
-    width: 16px;
-    height: 14px;
-    position: relative;
-    overflow: visible;
-}
-
-.public-sector,
-.public-sector * {
-    box-sizing: border-box;
-}
-
-.public-sector {
-    color: #000000;
-    text-align: left;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 24px;
-    line-height: 150%;
-    font-weight: 400;
-    position: relative;
-}
-
-
-
-.transport-logistic,
-.transport-logistic * {
-    box-sizing: border-box;
-}
-
-.transport-logistic {
-    color: #000000;
-    text-align: left;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 24px;
-    line-height: 150%;
-    font-weight: 400;
-    position: relative;
-    width: 221px;
-    height: 58px;
-}
-
-.share-from-square-1,
-.share-from-square-1 * {
-    box-sizing: border-box;
-}
-
-.share-from-square-1 {
-    width: 18px;
-    height: 16px;
-    position: relative;
-    overflow: visible;
-}
-
-.energy,
-.energy * {
-    box-sizing: border-box;
-}
-
-.energy {
-    color: #000000;
-    text-align: left;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 24px;
-    line-height: 150%;
-    font-weight: 400;
-    position: relative;
-}
-
-
-.folder-arrow-down-1,
-.folder-arrow-down-1 * {
-    box-sizing: border-box;
-}
-
-.folder-arrow-down-1 {
-    width: 16px;
-    height: 16px;
-    position: relative;
-    overflow: visible;
-}
-
-.real-estate,
-.real-estate * {
-    box-sizing: border-box;
-}
-
-.real-estate {
-    color: #000000;
-    text-align: left;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 24px;
-    line-height: 150%;
-    font-weight: 400;
-    position: relative;
-}
-
-.sector-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 20px;
-    width: 80%;
-    margin-left: 170px;
-}
-
-
-/* ------------ YETOO ---------*/
-/*
-.yetoo {
-    color: #000000;
-    font-family: "Inter-LightItalic", sans-serif;
-    font-size: 48px;
-    line-height: 130%;
-    font-weight: 300;
-    font-style: italic;
-}
-
-.yetoo-text-1 {
-    color: black;
-    margin-right: -100px;
-    text-align: left;
-    font-size: 42px;
-    font-family: "Sofia Pro", sans-serif;
-    font-weight: 800;
-    line-height: 1.2;
-    word-wrap: break-word;
-}
-
-.yetoo-text-2 {
-    width: 525px;
-    height: 164px;
-    color: #5C5F6E;
-    font-size: 18px;
-    font-family: Sofia Pro, sans-serif;
-    font-weight: 400;
-    line-height: 1.5;
-    word-wrap: break-word;
-    text-align: left;
-}
-
-.yetoo-part2 {
-    display: flex;
-    justify-content: space-between; 
-    align-items: flex-start; 
-    margin-left: 10%; 
-}
-
-.yetoo-paragra{
-    width: calc(50% - 30px); 
-}
-
-.yetoo-illu {
-    border-radius: 40px;
-    width: calc(50% - 30px); 
-    scale: 90%;
-}
-
-.Rectangle568 {
-    width: 564px;
-    height: 564px;
-    background: #E0F7FA;
-    border-radius: 40px;
-}
-
-.yetoo-image {
-    border-radius: 40px;
-}
-
-@media (max-width: 1265px) {
-    .yetoo-part2{
-        flex-direction: column;
-        align-items: center;
-    }
-    .yetoo-illu {
-        max-width: 80%;
-        height: auto;
-    }
-}
-*/
-
 
 /* ---------- Trust Company -------*/
 
@@ -731,10 +260,17 @@
 
 }
 
-@media (max-width: 825px) {
-
+@media (max-width: 960px) {
     .trust-text-span {
-        font-size: 24px;
+        font-size: 38px;
         /* Réduire la taille de la police */
+    }
+    .trustCompany-image {
+        height: 350px;
+    }
+}
+@media (max-width: 750px) {
+    .trustCompany-image {
+        height: 250px;
     }
 }

@@ -39,26 +39,29 @@ function Home() {
 
           <br/><br/> <br/>
           <br/><br/>
-          <h2 className="supportYou">We support you</h2>
+          <h2 className="supportYou" id="services">We support you</h2>
           <br/> <br/> <br/>
           <div className="support-section">
-            <div className="support-item">
-              <p>by providing highly qualified advices</p>
-              <img src={icon1} alt="Icone 1"/>
-            </div>
-            <div className="support-item">
-              <p>carry out your project</p>
-              <img src={icon2} alt="Icone 2"/>
-            </div>
-            <div className="support-item">
-              <p>optimize your plans</p>
-              <img src={icon3} alt="Icone 3"/>
-            </div>
+              <div className="support-item">
+                  <p>by providing highly qualified advices</p>
+                  <br/>
+                  <img src={icon1} alt="Icone 1"/>
+              </div>
+              <div className="support-item">
+                  <p>carry out your project</p>
+                  <br/>
+                  <img src={icon2} alt="Icone 2"/>
+              </div>
+              <div className="support-item">
+                  <p>optimize your plans</p>
+                  <br/>
+                  <img src={icon3} alt="Icone 3"/>
+              </div>
           </div>
           <br/><br/> <br/><br/> <br/><br/>
           <hr className="horizontal-line"/>
           <br/><br/>
-          <div className="content">
+          <div className="content" id="sectors">
             <div className="image-container">
               <img src={mbc} alt="Image 1"/>
               <br/><br/><br/>
@@ -71,7 +74,7 @@ function Home() {
                 PowerApps, and apps from Microsoft AppSource. It seamlessly adapts to your needs, providing the features
                 of NAV in the Cloud. With centralized management of goods, customers, sales, and financials, it
                 kickstarts digital transformation."
-              </div>
+              </div><br/>
             </div>
           </div>
           <hr className="horizontal-line"/>
@@ -81,14 +84,15 @@ function Home() {
               <img src={finance} alt="Image 2"/>
               <br/><br/><br/>
             </div>
-            <div className="text-container">
-              <Link to="/" className="microsoft-business-central">Financial & IT Consultants</Link><br/><br/>
-              <div className="text-support">"Financial analysis involves interpreting financial data to evaluate a
-                company's performance and make informed decisions. This includes assessing financial statements,
-                ratios,
-                and metrics to gauge profitability, liquidity, and overall financial health."
+              <div className="text-container">
+                  <Link to="/" className="support-link">Financial & IT Consultants</Link><br/><br/>
+                  <div className="text-support">"Financial analysis involves interpreting financial data to evaluate a
+                      company's performance and make informed decisions. This includes assessing financial statements,
+                      ratios,
+                      and metrics to gauge profitability, liquidity, and overall financial health."
+                  </div>
+                  <br/>
               </div>
-            </div>
           </div>
           <hr className="horizontal-line"/>
           <br/><br/>
@@ -97,14 +101,16 @@ function Home() {
               <img src={yetoo} alt="Image 3"/>
               <br/><br/><br/>
             </div>
-            <div className="text-container">
-              <Link to="/" className="microsoft-business-central">Yetoo</Link><br/><br/>
-              <div className="text-support">"Yetoo is a web app for real-time data analysis and decision-making. It
-                offers
-                dashboards, financial reporting, and tools for performance monitoring and optimization. Flexible and
-                user-friendly, Yetoo integrates with existing systems. Try it now for data-driven decisions."
+              <div className="text-container">
+                  <Link to="/" className="support-link">Yetoo</Link><br/><br/>
+                  <div className="text-support">"Yetoo is a web app for real-time data analysis and decision-making. It
+                      offers
+                      dashboards, financial reporting, and tools for performance monitoring and optimization. Flexible
+                      and
+                      user-friendly, Yetoo integrates with existing systems. Try it now for data-driven decisions."
+                  </div>
+                  <br/>
               </div>
-            </div>
           </div>
           <hr className="horizontal-line"/>
 

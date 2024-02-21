@@ -145,7 +145,7 @@
 /*======================================================
                       Mobile Menu Menu Icon
     ======================================================*/
-@media(max-width: 825px) {
+@media(max-width: 910px) {
     .menuIcon {
         cursor: pointer;
         display: block;
@@ -348,39 +348,44 @@
                      Responsive Mobile Menu
     ======================================================*/
 .overlay-menu {
-    background: lightblue;
-    color: rgb(13, 26, 38);
+    background: darkgray;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    padding-right: 15px;
     transform: translateX(-100%);
     width: 100vw;
-    height: 100vh;
+    height: 200vh;
     -webkit-transition: transform 0.2s ease-out;
     transition: transform 0.2s ease-out;
+    z-index: 8;
+    overflow: hidden;
+    position: fixed;
 }
 
-.overlay-menu ul,
-.overlay-menu li {
+.overlay-menu ul {
+    padding: 0; /* Supprimer les marges intérieures par défaut */
     display: block;
-    position: relative;
+    flex-direction: column; /* Afficher les liens en tant que blocs les uns en dessous des autres */
+    height: auto; /* Ajuster la hauteur automatiquement pour afficher les liens en dessous les uns des autres */
+    margin-top: 100%;
+}
+
+.overlay-menu li {
+    list-style: none; /* Supprimer les puces de la liste */
+    margin: 10px 0;
 }
 
 .overlay-menu li a {
     display: block;
     font-size: 1.8em;
     letter-spacing: 4px;
-    /*   opacity: 0; */
     padding: 10px 0;
-    text-align: right;
+    text-align: center;
     text-transform: uppercase;
-    -webkit-transition: color 0.3s ease;
-    transition: color 0.3s ease;
-    /*   -webkit-transition: 0.2s opacity 0.2s ease-out;
-    transition: 0.2s opacity 0.2s ease-out; */
+    color: #fff; /* Changer la couleur du texte */
+    text-decoration: none; /* Supprimer la décoration de lien */
 }
+
 
 .overlay-menu li a:hover,
 .overlay-menu li a:active {

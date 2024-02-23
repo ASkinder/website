@@ -22,7 +22,7 @@ function Contact() {
     };
 
   return (
-    <div className="Contact">
+    <div className="contact">
 
       <div className="contactPart1">
         <span className="touch">Get in touch.</span><br/>
@@ -48,7 +48,7 @@ function Contact() {
                 <br/>
                 <span className="contact_message">Message</span><br/>
                 <input className="message_input" name="message"></input>
-                <br/> <br/>
+                <br/> <br/> <br/>
                 <button className="buttonSend" type="submit">Send</button>
             </form>
 

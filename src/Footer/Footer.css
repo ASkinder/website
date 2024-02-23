@@ -1,5 +1,5 @@
-.ei39_1037_105_619 { 
-    background-color: rgba(250.00000029802322, 250.00000029802322, 250.00000029802322, 1);
+.footer-1 {
+    background-color: rgba(250, 250, 250, 1);
     width: 100%; /* Modifier la largeur en pourcentage */
     height: auto;
     display: flex;
@@ -7,7 +7,7 @@
     align-items: center; /* Alignement vertical au centre */
 }
 
-.e39_1056 { 
+.logo-footer {
     width: 484px;
     height: 265px;
     border-radius: 32px;
@@ -24,87 +24,18 @@
     margin-right: -70px; /* Marge à droite pour séparer du bord droit */
 }
 
-.address,
-.email,
-.phone {
-    display: flex;
-    align-items: center; /* Alignement vertical des éléments */
-    margin-bottom: 12px; /* Espacement entre les lignes */
+.contact-image {
+    width: 50%;
+    margin-right: 20%;
 }
 
-h1,
-p {
-    margin-right: 300px; /* Marge à droite pour séparer le texte de l'image */
-	color: black;
-}
-
-.address h1,
-.email h1,
-.phone h1 {
-    font-size: 28px; /* Augmenter la taille du titre */
-}
-
-.address p,
-.email p,
-.phone p {
-    font-size: 24px; /* Augmenter la taille du paragraphe */
-}
-
-
-.address img,
-.email img,
-.phone img {
-    width: 68px; /* Modifier la largeur de l'image selon vos besoins */
-    height: auto; /* Maintenir le ratio hauteur/largeur */
-	margin-right: 20px;
-}
-
-.email {
-	margin-right: 278px;
-}
-.phone {
-	margin-right: 364px;
-}
-.address {
-    margin-right: 200px;
-}
-
-@media (max-width: 1700px) {
-    .footer-part2 {
-        margin-right: -70px;
+@media (max-width: 1220px) {
+    .logo-footer {
+       display: none;
     }
-    .address h1,
-    .email h1,
-    .phone h1 {
-        font-size: 18px;
-    }
-
-    .address p,
-    .email p,
-    .phone p {
-        font-size: 14px;
-    }
-
-    .address img,
-    .email img,
-    .phone img {
-        width: 68px;
-        height: auto;
-        margin-right: 20px;
-    }
-
-    .email {
-        margin-right: 248px;
-    }
-    .phone {
-        margin-right: 297px;
-    }
-    .address {
-        margin-right: 198px;
-    }
-
-    .e39_1056 {
-        width: 350px;
-        height: 200px;
+    .contact-image {
+        width: 50%;
+        margin-right: 50%;
+        margin-left: 50%;
     }
 }

@@ -1,3 +1,7 @@
+.Home {
+    margin-top: -10px;
+}
+
 .horizontal-line {
     width: 90%; /* Ajustez la largeur selon vos besoins */
     height: 2px;
@@ -158,6 +162,9 @@
     .support-item p {
         width: 100%; /* Réinitialisez la largeur */
         margin-left: 0; /* Réinitialisez la marge */
+    }
+    .Home {
+        margin-top: -20px;
     }
 }
 

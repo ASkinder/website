@@ -1,5 +1,4 @@
 
-
 .nav-wrapper {
     margin: auto;
     text-align: center;
@@ -71,6 +70,12 @@
 @media(max-width: 1000px) {
     #navbar ul {
         display: none;
+    }
+    .App-header {
+        height: 180px;
+    }
+    .logo {
+        margin: 0 auto 88px; /* Ajout */
     }
 }
 
@@ -145,7 +150,7 @@
 /*======================================================
                       Mobile Menu Menu Icon
     ======================================================*/
-@media(max-width: 910px) {
+@media(max-width: 1000px) {
     .menuIcon {
         cursor: pointer;
         display: block;

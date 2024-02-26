@@ -10,7 +10,6 @@
     margin: 0 auto; /* Centrer horizontalement */
 }
 
-
 .home-text1 {
     margin-left: 30%;
     font-size: 45px;
@@ -19,10 +18,19 @@
     font-weight: 400;
 }
 
+.Carousel {
+    width: 100%;
+}
+.carousel, .carousel-inner {
+    width: 100% !important;
+}
+
+
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
-    width: 70%;
-    margin: auto;
+    width: 100%; /* Changer la largeur pour occuper toute la largeur disponible */
+    height: auto; /* Garder le ratio hauteur/largeur de l'image */
+    margin: auto; /* Centrer l'image horizontalement */
 }
 
 .carousel-caption h3 {
@@ -176,20 +184,29 @@
 }
 
 .support-link {
-    box-sizing: border-box;
-    overflow: hidden;
-    color: #000000;
-    text-align: center;
-    font-weight: 400;
-    position: relative;
-    width: 559px;
-    height: 80px;
-
-    font-family: 'minerva-modern', sans-serif; /* Famille de police */
-    font-style: normal; /* Style de police normal */
-    font-size: 32px; /* Taille de la police 32px */
+    font-family: 'minerva-modern', sans-serif;
+    font-style: normal;
+    font-size: 32px;
     line-height: 43px; /* Hauteur de ligne 43px */
+    margin-bottom: 20px; /* Espacement en bas */
 }
+
+.learn-more-button {
+    background-color: #007bff; /* Couleur de fond */
+    color: #ffffff; /* Couleur du texte */
+    border: none; /* Supprimer la bordure */
+    padding: 10px 20px; /* Ajouter un espacement intérieur */
+    font-size: 16px; /* Taille de la police */
+    cursor: pointer; /* Afficher le curseur pointer */
+    border-radius: 10px; /* Ajouter une bordure arrondie */
+    text-decoration: none; /* Supprimer le soulignement par défaut */
+}
+.learn-more-button:hover {
+    background-color: #0056b3; /* Couleur de fond au survol */
+    color: #ffffff;
+    text-decoration: none;
+}
+
 
 .content {
     display: flex;

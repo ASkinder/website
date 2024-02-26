@@ -61,66 +61,75 @@ function Home() {
           <br/><br/> <br/><br/> <br/><br/>
           <hr className="horizontal-line"/>
           <br/><br/>
-          <div className="content" id="sectors">
-            <div className="image-container">
-              <img src={mbc} alt="Image 1"/>
-              <br/><br/><br/>
+            <div className="content" id="sectors">
+                <div className="image-container">
+                    {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
+                    <img src={mbc} alt="Image 1"/>
+                    <br/><br/><br/>
+                </div>
+                <div className="text-container">
+                    <h2 className="support-link">Microsoft Business Central : ERP Dynamics 365 Business Central</h2>
+                    <div className="text-support">
+                        "Business Central is an ERP solution for businesses of all sizes, offering tools like Microsoft
+                        Flow, PowerApps, and apps from Microsoft AppSource. It seamlessly adapts to your needs,
+                        providing the features of NAV in the Cloud. With centralized management of goods, customers,
+                        sales, and financials, it kickstarts digital transformation."
+                    </div>
+                    <br/><br/>
+                    <Link to="/mbc" className="learn-more-button">En savoir plus</Link>
+                    <br/><br/><br/>
+                </div>
             </div>
-            <div className="text-container">
-              <Link to="/mbc" className="support-link">Microsoft Business Central : ERP Dynamics 365 Business
-                Central</Link><br/><br/>
-              <div className="text-support">
-                "Business Central is an ERP solution for businesses of all sizes, offering tools like Microsoft Flow,
-                PowerApps, and apps from Microsoft AppSource. It seamlessly adapts to your needs, providing the features
-                of NAV in the Cloud. With centralized management of goods, customers, sales, and financials, it
-                kickstarts digital transformation."
-              </div><br/>
+            <hr className="horizontal-line"/>
+            <br/><br/>
+            <div className="content">
+                <div className="image-container">
+                    {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
+                    <img src={finance} alt="Image 2"/>
+                    <br/><br/><br/>
+                </div>
+                <div className="text-container">
+                    <h2 className="support-link">Financial & IT Consultants</h2>
+                    <div className="text-support">"Financial analysis involves interpreting financial data to evaluate a
+                        company's performance and make informed decisions. This includes assessing financial statements,
+                        ratios,
+                        and metrics to gauge profitability, liquidity, and overall financial health."
+                    </div>
+                    <br/><br/>
+                    <Link to="/financial" className="learn-more-button">En savoir plus</Link>
+                    <br/><br/><br/>
+                </div>
             </div>
-          </div>
-          <hr className="horizontal-line"/>
-          <br/><br/>
-          <div className="content">
-            <div className="image-container">
-              <img src={finance} alt="Image 2"/>
-              <br/><br/><br/>
-            </div>
-              <div className="text-container">
-                  <Link to="/" className="support-link">Financial & IT Consultants</Link><br/><br/>
-                  <div className="text-support">"Financial analysis involves interpreting financial data to evaluate a
-                      company's performance and make informed decisions. This includes assessing financial statements,
-                      ratios,
-                      and metrics to gauge profitability, liquidity, and overall financial health."
-                  </div>
-                  <br/>
-              </div>
-          </div>
-          <hr className="horizontal-line"/>
-          <br/><br/>
-          <div className="content">
-            <div className="image-container">
+            <hr className="horizontal-line"/>
+            <br/><br/>
+            <div className="content">
+                <div className="image-container">
+                {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
               <img src={yetoo} alt="Image 3"/>
               <br/><br/><br/>
             </div>
-              <div className="text-container">
-                  <Link to="/" className="support-link">Yetoo</Link><br/><br/>
-                  <div className="text-support">"Yetoo is a web app for real-time data analysis and decision-making. It
-                      offers
-                      dashboards, financial reporting, and tools for performance monitoring and optimization. Flexible
-                      and
-                      user-friendly, Yetoo integrates with existing systems. Try it now for data-driven decisions."
-                  </div>
-                  <br/>
-              </div>
-          </div>
-          <hr className="horizontal-line"/>
+                <div className="text-container">
+                    <h2 className="support-link">Yetoo</h2><br/><br/>
+                    <div className="text-support">"Yetoo is a web app for real-time data analysis and decision-making.
+                        It
+                        offers
+                        dashboards, financial reporting, and tools for performance monitoring and optimization. Flexible
+                        and
+                        user-friendly, Yetoo integrates with existing systems. Try it now for data-driven decisions."
+                    </div>
+                    <br/><br/>
+                    <Link to="/" className="learn-more-button">En savoir plus</Link>
+                    <br/><br/><br/>
+                </div>
+            </div>
+            <hr className="horizontal-line"/>
 
 
+            <br/><br/><br/>
 
-          <br/><br/><br/>
 
-
-          <br/><br/> <br/><br/><br/>
-          <span className="trust-text-span">Top company trust us<br/><br/></span>
+            <br/><br/> <br/><br/><br/>
+            <span className="trust-text-span">Top company trust us<br/><br/></span>
           <img className="trustCompany-image" src={trustCompany} alt={"trusted Companies"}></img>
           <br/><br/> <br/><br/><br/>
         </div>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Header.css';
-import logo from '../Img/LogoTafili.png';
+import logo from '../Img/LogoTofili.png';
 import linkedinIcon from '../Img/icon_linkdin.png';
 import emailIcon from '../Img/icon_email.png';
 

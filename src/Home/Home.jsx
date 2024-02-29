@@ -22,7 +22,7 @@ function Home() {
     return (
         <div className="Home">
           <br/><br/> <br/><br/>
-          <h1 className="home-text1">Our mission is to deliver the suitable solution for you finance functions</h1>
+          <h1 className="home-text1">The suitable solution for you finance functions</h1>
           <br/><br/> <br/><br/>
           <Carousel activeIndex={currentSlide} onSelect={(index) => setCurrentSlide(index)}
                     style={{width: '68%', margin: 'auto', zIndex: '1'}}>

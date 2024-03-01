@@ -78,7 +78,7 @@
     text-align:left;
     font-size:8.5em;
     letter-spacing:-5px;
-    margin-left: 400px;
+    margin-left: 300px;
 
 }
 .many_more_text {
@@ -95,8 +95,6 @@
     max-width: 70%;
     word-wrap: break-word;
 }
-
-
 .business_controler {
     display: flex;
     align-items: center; /* Aligner verticalement */
@@ -104,7 +102,7 @@
     width:1326px;
     height:727px;
     border-radius:24px;
-    margin-left: 20%;
+    margin-left: 15%;
 }
 .business_controler_title {
     color:rgba(0, 0, 0, 1);
@@ -117,7 +115,7 @@
 }
 .business_controler_text {
     color:rgba(92.00000211596489, 95.00000193715096, 110.00000104308128, 1);
-    width:79px;
+    width:479px;
     height:96px;
     font-family: Sofia Pro, serif;
     text-align:left;
@@ -128,8 +126,20 @@
 .business_controler_part1 {
     width: 50%;
     margin-left: 10px;
+    margin-top: -50px;
 }
 
 .bc_illu {
     height: 70%;
+}
+
+.business_controler2 {
+    display: flex;
+    align-items: center; /* Aligner verticalement */
+    background-color:rgba(236.00000113248825, 236.00000113248825, 254.00000005960464, 1);
+    width:1326px;
+    height:727px;
+    border-radius:24px;
+    margin-top: 5%;
+    margin-left: 15%;
 }

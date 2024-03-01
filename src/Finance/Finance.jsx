@@ -2,6 +2,7 @@ import React from 'react';
 import './Finance.css';
 import data_analyst from "../Img/data_analyst.png"
 import bc_illu from "../Img/business_controller_illu.png"
+import bc_illu2 from "../Img/bc_illu2.png"
 
 function Finance() {
     return (
@@ -58,13 +59,25 @@ function Finance() {
                 <div className="business_controler_part1">
                     <span className="business_controler_title">Business controler</span>
                     <br/><br/><br/><br/>
-                    <span className="business_controler_text">
+                    <div className="business_controler_text">
                         Consolidating all of your data, including digital documents stored in
                         Team Folders, provides your team with a comprehensive overview of all your projects in one
                         centralized location.
-                    </span>
+                    </div>
                 </div>
                 <img src={bc_illu} className="bc_illu" alt="business Central illustration"/>
+            </div>
+            <div className="business_controler2">
+
+                <img src={bc_illu2} className="bc_illu" alt="business Central illustration 2"/>
+                <div className="business_controler_part1">
+                    <span className="business_controler_title">Chief Financial Officer</span>
+                    <br/><br/><br/><br/>
+                    <div className="business_controler_text">
+                      If you're crowdsourcing a new product, service, or process and need to share confidential files
+                        or folders with external groups, ensure full control and security over your data by using password-protected access links in Deupload.
+                    </div>
+                </div>
             </div>
             <br/><br/> <br/><br/><br/><br/> <br/><br/><br/><br/>
         </div>

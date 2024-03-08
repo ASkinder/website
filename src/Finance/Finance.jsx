@@ -71,9 +71,9 @@ function Finance() {
 
                 <img src={bc_illu2} className="bc_illu" alt="business Central illustration 2"/>
                 <div className="business_controler_part1">
-                    <span className="business_controler_title">Chief Financial Officer</span>
+                    <span className="business_controler_title1">Chief Financial Officer</span>
                     <br/><br/><br/><br/>
-                    <div className="business_controler_text">
+                    <div className="business_controler_text1">
                       If you're crowdsourcing a new product, service, or process and need to share confidential files
                         or folders with external groups, ensure full control and security over your data by using password-protected access links in Deupload.
                     </div>

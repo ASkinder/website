@@ -183,6 +183,10 @@
                       Mobile Menu Menu Icon
     ======================================================*/
 @media(max-width: 1000px) {
+    .button-travaille {
+        display: none;
+    }
+
     .contact-icons {
     display: none;
     }

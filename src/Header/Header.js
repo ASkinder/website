@@ -16,10 +16,10 @@ function Header() {
         <div className="Header">
             <header className="App-header">
                 <div className="contact-icons">
-                    <a href="https://www.linkedin.com/in/drilon-tafili-5a4599161/"><img src={linkedinIcon}
+                    <a href="https://www.linkedin.com/company/yetoo/"><img src={linkedinIcon}
                                                                                         alt="LinkedIn"
                                                                                         className="contact-icon"/></a>
-                    <a href="mailto:contact@tafiliconsulting.be"><img src={emailIcon} alt="Email"
+                    <a href="mailto:d.tafili@tafiliconsulting.be"><img src={emailIcon} alt="Email"
                                                                       className="contact-icon"/></a>
                 </div>
                 <div className="work-with-me-button">
@@ -35,7 +35,7 @@ function Header() {
                         <ul id="menu" className={isMenuOpen ? 'open' : ''}>
                             <li><a href="/home/#services">Services</a></li>
                             <li><a href="/home/#sectors">Sectors</a></li>
-                            <li><a href="/contact">Contact</a></li>
+                            <li><a href="/team">Meet Us</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -48,8 +48,8 @@ function Header() {
                 <div className="overlay-menu" style={{transform: isMenuOpen ? 'translateX(0%)' : 'translateX(-100%)'}}>
                     <ul id="menu">
                         <li><a href="/home/#services">Services</a></li>
-                        <li><a href="/home/#sectors">Sectors</a></li>
-                        <li><a href="/contact">Contact</a></li>
+                        <li><a   href="/home/#sectors">Sectors</a></li>
+                        <li><a href="/team">Meet Us</a></li>
                     </ul>
                 </div>
             </header>

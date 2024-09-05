@@ -22,7 +22,7 @@ const TeamPage = () => {
             <EmployeeCard
                 name="Alexandre Touat"
                 title="Senior Data Engineer | BI specialist | SQL | ETL"
-                description="Développeur spécialisé en finance, Alexandre combine compétences en développement informatique et expertise financière pour offrir des solutions optimisées."
+                description="Développeur informatique spécialisé en gestion de données, Alexandre combine compétences en développement informatique et analyse de données pour offrir des solutions optimisées."
                 image={AlexandreImage}
                 linkedin="https://www.linkedin.com/in/alexandre-touat-532097325/"
                 email="ato@tafiliconsulting.be"

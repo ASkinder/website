@@ -119,7 +119,7 @@ function Home() {
                         user-friendly, Yetoo integrates with existing systems. Try it now for data-driven decisions."
                     </div>
                     <br/><br/>
-                    <Link to="/" className="learn-more-button">En savoir plus</Link>
+                    <Link to="/yetoo" className="learn-more-button">En savoir plus</Link>
                     <br/><br/><br/>
                 </div>
             </div>

@@ -7,6 +7,7 @@ import Finance from '../Finance/Finance';
 import Contact from '../Contact/Contact';
 import Team from '../Company/TeamPage';
 import PowerBI from '../powerbi/PowerBI'
+import Yetoo from '../Yetoo/Yetoo'
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
                 <Route path="/contact" element={<Contact/>} />
                 <Route path="/team" element={<Team/>} />
                 <Route path="/powerbi" element={<PowerBI/>} />
+                <Route path="/yetoo" element={<Yetoo/>} />
             </Routes>
         </Router>
     </div>

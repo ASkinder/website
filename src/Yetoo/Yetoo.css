@@ -1,8 +1,22 @@
+/* General page styles */
 .yetoo-page {
     font-family: Arial, sans-serif;
     margin: 20px;
     padding: 20px;
     background-color: #f9f9f9;
+}
+
+/* Initial state for features: invisible and slightly off position */
+.feature {
+    opacity: 0;
+    transform: translateY(40px); /* Start with a larger offset for more noticeable effect */
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out; /* Longer transition duration */
+}
+
+/* Fade-in effect when feature is in view */
+.feature.fade-in {
+    opacity: 1;
+    transform: translateY(0); /* Reset translation to original position */
 }
 
 /* Header Section */
@@ -40,7 +54,7 @@
 }
 
 /* Features Section */
-.features-section {
+.features-section-yetoo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,7 +87,7 @@
 
 .feature-text h2 {
     font-size: 2rem;
-    color: rgb(155, 8, 24);
+    color:  rgb(155, 8, 24);
     margin-bottom: 10px;
 }
 

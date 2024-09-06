@@ -10,7 +10,7 @@ import icon2 from '../Img/icon2.png';
 import icon3 from '../Img/icon3.png';
 import mbc from '../Img/mbc.png';
 import finance from '../Img/finance.jpg';
-import yetoo from '../Img/yetoo.jpeg';
+import yetoo from '../Img/yetooHome.png';
 import powerbi from '../Img/powerBI.jpg';
 import trustCompany from '../Img/TrustCompany.png';
 import './Home.css';
@@ -86,7 +86,7 @@ function Home() {
             <div className="content">
                 <div className="image-container">
                     {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
-                    <img src={finance} alt="Image 2"/>
+                    <img src={office2} alt="Image 2"/>
                     <br/><br/><br/>
                 </div>
                 <div className="text-container">

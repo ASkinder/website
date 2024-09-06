@@ -56,7 +56,7 @@
 }
 
 /* Second section for the features list and image */
-.features-section {
+.features-section-bi {
     display: flex;
     justify-content: space-between;
     align-items: center; /* Center content vertically */

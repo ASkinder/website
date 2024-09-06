@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Yetoo.css';
 import yetooLogo from '../Img/yetoo-logoV1-rbg.png';
 import yetooStock from '../Img/YetooStock.png';
@@ -6,6 +6,39 @@ import yetooPL from '../Img/YetooPL.png';
 import yetooStockCategory from '../Img/YetooStockCategory.png';
 
 function Yetoo() {
+    // Create a reference for each feature
+    const featureRefs = useRef([]);
+
+    useEffect(() => {
+        // IntersectionObserver callback
+        const callback = (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                } else {
+                    entry.target.classList.remove('fade-in'); // Remove class to fade out when out of view
+                }
+            });
+        };
+
+        // Set up IntersectionObserver
+        const observer = new IntersectionObserver(callback, {
+            threshold: 0.1, // Trigger when 10% of the element is visible
+        });
+
+        // Observe each feature item
+        featureRefs.current.forEach((feature) => {
+            if (feature) observer.observe(feature);
+        });
+
+        return () => {
+            // Clean up the observer on component unmount
+            featureRefs.current.forEach((feature) => {
+                if (feature) observer.unobserve(feature);
+            });
+        };
+    }, []);
+
     return (
         <div className="yetoo-page">
             {/* Header Section */}
@@ -20,8 +53,11 @@ function Yetoo() {
             <hr className="section-divider" />
 
             {/* Features Section */}
-            <section className="features-section">
-                <div className="feature">
+            <section className="features-section-yetoo">
+                <div
+                    className="feature"
+                    ref={(el) => (featureRefs.current[0] = el)} // Reference for first feature
+                >
                     <img src={yetooStock} alt="Yetoo Stock Forecast" className="feature-image" />
                     <div className="feature-text">
                         <h2>Stock Forecasting</h2>
@@ -34,7 +70,10 @@ function Yetoo() {
                     </div>
                 </div>
 
-                <div className="feature">
+                <div
+                    className="feature"
+                    ref={(el) => (featureRefs.current[1] = el)} // Reference for second feature
+                >
                     <img src={yetooPL} alt="Yetoo Profit & Loss" className="feature-image" />
                     <div className="feature-text">
                         <h2>Profit & Loss Analysis</h2>
@@ -47,7 +86,10 @@ function Yetoo() {
                     </div>
                 </div>
 
-                <div className="feature">
+                <div
+                    className="feature"
+                    ref={(el) => (featureRefs.current[2] = el)} // Reference for third feature
+                >
                     <img src={yetooStockCategory} alt="Yetoo Stock by Category" className="feature-image" />
                     <div className="feature-text">
                         <h2>Category-Based Stock Management</h2>
@@ -71,6 +113,5 @@ function Yetoo() {
         </div>
     );
 }
-
 
 export default Yetoo;

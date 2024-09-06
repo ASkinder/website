@@ -18,7 +18,7 @@ function PowerBI() {
             <hr className="section-divider"/>
 
             {/* Second Section */}
-            <section className="features-section">
+            <section className="features-section-bi">
                 <div className="features-list">
                     <ul>
                         <li>Réunissez l'ensemble de vos données</li>

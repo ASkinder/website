@@ -15,7 +15,7 @@ function Mbc() {
             <div className="Mbc1">
                 <br/>
 
-            <div className="video-container">
+            <div className="video-container-mbc">
                 <div className="content-wrapper">
                     <div className="rectangle-gauche">
                         <span className="mbc-title">Microsoft Business Central</span>

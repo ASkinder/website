@@ -1,6 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap');
+
+
 .Home {
-    margin-top: -10px;
+    margin-top: 0px;
+    min-height: 100vh; /* La hauteur du conteneur prend toute la hauteur de la vue */
+    overflow: visible;
 }
+
+.video-container {
+    margin-top: 0px;
+    position: relative;
+    width: 100%;
+    height: 80vh; /* Prend toute la hauteur de la vue */
+    min-height: 80vh; /* Assure une taille minimale */
+    overflow: hidden; /* Cache les parties de la vidéo qui débordent */
+}
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw; /* La vidéo prend toute la largeur de la fenêtre */
+    height: 100vh; /* La vidéo prend toute la hauteur de la fenêtre */
+    object-fit: cover; /* Assure que la vidéo couvre tout l'espace sans déformation */
+    transform: translate(-50%, -50%); /* Centre la vidéo au milieu de l'écran */
+}
+
+.overlay-text {
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #0a0a0a; /* Change la couleur en blanc pour un meilleur contraste */
+    text-align: center;
+    font-size: 10rem; /* Augmente la taille de la police */
+    font-family: 'Poppins', sans-serif; /* Police arrondie et moderne */
+    font-weight: 800; /* Rendre le texte encore plus gras */
+    z-index: 1; /* Assure que le texte est au-dessus de la vidéo */
+    padding: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* Ajoute une ombre pour plus de lisibilité */
+    letter-spacing: 2px; /* Espace légèrement les lettres */
+    line-height: 1.2; /* Ajuste l'interligne pour un aspect plus compact */
+}
+
+.overlay-text-2 {
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f6f3f3; /* Change la couleur en blanc pour un meilleur contraste */
+    text-align: center;
+    font-size: 10rem; /* Augmente la taille de la police */
+    font-family: 'Poppins', sans-serif; /* Police arrondie et moderne */
+    font-weight: 800; /* Rendre le texte encore plus gras */
+    z-index: 1; /* Assure que le texte est au-dessus de la vidéo */
+    padding: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* Ajoute une ombre pour plus de lisibilité */
+    letter-spacing: 2px; /* Espace légèrement les lettres */
+    line-height: 1.2; /* Ajuste l'interligne pour un aspect plus compact */
+}
+
+@media (max-width: 768px) {
+    .overlay-text {
+        font-size: 1.5rem; /* Ajustement de la taille de texte pour les petits écrans */
+    }
+}
+
+.learn-more-button-1 {
+    background-color: #111111; /* Couleur de fond */
+    color: #ffffff; /* Couleur du texte */
+    border: none; /* Supprimer la bordure */
+    padding: 10px 20px; /* Ajouter un espacement intérieur */
+    font-size: 20px; /* Taille de la police */
+    cursor: pointer; /* Afficher le curseur pointer */
+    border-radius: 10px; /* Ajouter une bordure arrondie */
+    text-decoration: none; /* Supprimer le soulignement par défaut */
+}
+.learn-more-button-1:hover {
+    background-color: #f6f3f3; /* Couleur de fond au survol */
+    border-color: #0a0a0a;
+    color: #15033b;
+    text-decoration: none;
+}
+.learn-more-button-2 {
+    background-color: #f6f3f3; /* Couleur de fond */
+    color: #15033b; /* Couleur du texte */
+    border: none; /* Supprimer la bordure */
+    padding: 10px 20px; /* Ajouter un espacement intérieur */
+    font-size: 20px; /* Taille de la police */
+    cursor: pointer; /* Afficher le curseur pointer */
+    border-radius: 10px; /* Ajouter une bordure arrondie */
+    text-decoration: none; /* Supprimer le soulignement par défaut */
+}
+.learn-more-button-2:hover {
+    background-color: #111111; /* Couleur de fond au survol */
+    border-color: #f6f3f3;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+
 
 .horizontal-line {
     width: 90%; /* Ajustez la largeur selon vos besoins */
@@ -18,81 +118,16 @@
     font-weight: 400;
 }
 
-.Carousel {
-    width: 100%;
-}
-.carousel, .carousel-inner {
-    width: 100% !important;
-}
-
-
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-    width: 100%; /* Changer la largeur pour occuper toute la largeur disponible */
-    height: auto; /* Garder le ratio hauteur/largeur de l'image */
-    margin: auto; /* Centrer l'image horizontalement */
-}
-
-.carousel-caption h3 {
-    position: absolute;
-    top: -280%;
-    left: 50%;
-    font-size: 40px;
-    transform: translate(-50%, -50%);
-    text-align: center; /* Pour centrer le texte horizontalement */
-    color: white; /* Couleur du texte */
-    padding: 20px; /* Espacement intérieur */
-}
-
-.carousel-caption p {
-    position: absolute;
-    top: -120%;
-    left: 50%;
-    width: 150%;
-    font-size: 26px;
-    transform: translate(-50%, -50%);
-    text-align: center; /* Pour centrer le texte horizontalement */
-    padding: 20px; /* Espacement intérieur */
-}
-
-.carousel-indicators {
-    position: absolute;
-    bottom: 10px; /* Ajustez la distance du bas selon vos besoins */
-    left: 35%; /* Déplace les indicateurs vers le centre */
-    transform: translateX(-50%); /* Centre les indicateurs horizontalement */
-}
-
-
-@media (max-width: 1410px) {
-    .carousel-caption h3 {
-        font-size: 30px;
-    }
-    .carousel-caption p {
-        font-size: 20px;
-    }
-}
 
 @media (max-width: 1100px) {
     .home-text1 {
         font-size: 35px;
-    }
-    .carousel-caption h3 {
-        font-size: 20px;
-    }
-    .carousel-caption p {
-        font-size: 16px;
     }
 }
 
 @media (max-width: 850px) {
     .home-text1 {
         font-size: 25px;
-    }
-    .carousel-caption h3 {
-        font-size: 20px;
-    }
-    .carousel-caption p {
-        display: none;
     }
 }
 

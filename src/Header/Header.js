@@ -36,7 +36,7 @@ function Header() {
                             <a href="/team">Meet Us</a>
                         </li>
                         <li>
-                            <a href="/contact">Rejoignez-nous</a>
+                            <a href="/contact">Contact us</a>
                         </li>
                     </ul>
                 </div>

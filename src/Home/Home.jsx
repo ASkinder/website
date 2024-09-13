@@ -6,7 +6,7 @@ import icon1 from '../Img/icon1.png';
 import icon2 from '../Img/icon2.png';
 import icon3 from '../Img/icon3.png';
 import trustCompany from '../Img/TrustCompany.png';
-import yetooVideo from '../Img/YetooV1.mp4';
+import yetooVideo from '../Img/YetooHD.mp4';
 import powerbiVideo from '../Img/PowerBI.mp4';
 import mbcVideo from '../Img/MBC.mp4';
 import './Home.css';

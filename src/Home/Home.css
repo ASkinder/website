@@ -7,14 +7,145 @@
     overflow: visible;
 }
 
+
+/* Style pour la vidéo d'intro en plein écran */
+.intro-video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 1s ease; /* Transition de fondu */
+}
+
+.intro-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Animation de fondu pour masquer la vidéo */
+.fade-out {
+    opacity: 0;
+    pointer-events: none; /* Empêche l'interaction pendant le fondu */
+}
+
+/* Style pour la première section avec une image de fond */
+.section-image {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Assure-toi que ce style s'applique à ta première section */
+.first-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Ajuste en fonction de ta mise en page */
+    background-image: url('../Img/teamfond.jpg'); /* Chemin vers ton image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Centre le texte */
+    animation: fadeIn 2s forwards; /* Animation de fondu */
+    overflow: hidden;
+
+}
+
+/* Overlay sombre */
+.first-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Ajuste l'opacité (0.5 = 50%) et la couleur (noir ici) */
+    z-index: 1; /* S'assure que l'overlay est au-dessus de l'image */
+}
+
+/* Texte par-dessus l'image et l'overlay */
+.first-section .text-overlay {
+    position: relative;
+    z-index: 2; /* Assure que le texte est au-dessus de l'overlay */
+    color: #ffffff; /* Couleur du texte en blanc pour un meilleur contraste */
+    text-align: center;
+    font-size: 2rem; /* Ajuste la taille du texte selon tes besoins */
+    padding: 20px; /* Ajoute un peu d'espace autour du texte */
+}
+.text-overlay h1 {
+    color: #ffffff; /* Couleur du texte en blanc pour un meilleur contraste */
+    font-size: 10rem; /* Ajuste la taille du texte selon tes besoins */
+    padding: 40px; /* Ajoute un peu d'espace autour du texte */
+    text-align: left;
+    margin-left: 10%;
+    width: 60%;
+    font-family: 'Baskerville', 'Times New Roman', Times, serif;
+}
+/* Style du bouton "READ MORE" */
+.learn-more-button-0 {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none !important;
+    font-size: 28px;
+    padding: 8px 16px;
+    position: relative;
+    transition: color 0.3s ease;
+    margin-left: -69%;
+    cursor: pointer;
+}
+
+/* Style au survol : soulignement avec une ligne blanche */
+.learn-more-button-0::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+}
+
+.learn-more-button-0:hover {
+    color: #fff; /* Assure que le texte reste blanc */
+}
+
+/* Animation au survol pour faire apparaître la ligne */
+.learn-more-button-0:hover::after {
+    width: 100%;
+}
+
+/* Animation pour le fondu */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .video-container {
     margin-top: 0px;
     position: relative;
     width: 100%;
-    height: 80vh; /* Prend toute la hauteur de la vue */
+    height: 100vh; /* Prend toute la hauteur de la vue */
     min-height: 80vh; /* Assure une taille minimale */
     overflow: hidden; /* Cache les parties de la vidéo qui débordent */
 }
+
 
 .background-video {
     position: absolute;

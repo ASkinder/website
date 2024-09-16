@@ -1,5 +1,5 @@
 .Home {
-    margin-top: 0px;
+    margin-top: -7%;
     min-height: 100vh; /* La hauteur du conteneur prend toute la hauteur de la vue */
     overflow: visible;
 }
@@ -133,6 +133,73 @@
         opacity: 1;
     }
 }
+
+
+
+
+/* Styles pour la deuxième section */
+.second-section {
+    background-color: #f4f4f4; /* Couleur de fond pour la section */
+    padding: 50px 0; /* Espacement autour de la section */
+    height: 80vh; /* Hauteur de la section (80% de la hauteur de la fenêtre) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-section-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%; /* Ajuste la largeur selon vos besoins */
+    position: relative;
+}
+
+.info-box {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%; /* Largeur des colonnes */
+    position: relative;
+}
+
+.info-box1 {
+    margin-top: -50px; /* Positionne la première boîte sans décalage vertical */
+}
+
+.info-box2 {
+    margin-top: 50px; /* Décale la deuxième boîte vers le bas */
+}
+
+.info-box3 {
+    margin-top: 150px; /* Décale la troisième boîte encore plus bas */
+}
+
+.info-box h2 {
+    font-size: 4em; /* Taille du texte des titres */
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    font-size: 2.4em; /* Taille du texte des paragraphes */
+    margin-bottom: 20px;
+}
+
+.learn-more-link {
+    font-size: 2em;
+    color: #000000; /* Couleur du texte du lien */
+    text-decoration: none; /* Supprime le soulignement */
+    font-weight: bold;
+}
+
+.learn-more-link:hover {
+    text-decoration: none;
+    border-bottom: 2px solid white; /* Ligne blanche sous le texte au survol */
+}
+
 
 .video-container {
     margin-top: 0px;

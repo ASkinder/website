@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: #f5f5f5; /* Optionnel: pour un fond léger */
+   /* background-color: #f5f5f5; Optionnel: pour un fond léger */
     padding: 20px; /* Ajoute un peu de padding autour du contenu */
 }
 

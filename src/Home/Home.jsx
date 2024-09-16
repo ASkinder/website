@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import videoLogo from '../Img/TafiliAnimation1.mp4';
 import trustCompany from '../Img/TrustCompany.png';
-import yetooVideo from '../Img/YetooHD.mp4';
+import yetooVideo from '../Img/YetooLogoGarph.mp4';
 import powerbiVideo from '../Img/powerBIHD.mp4';
 import mbcVideo from '../Img/mbcHD.mp4';
 import './Home.css';
@@ -84,10 +84,36 @@ function Home() {
                     <div className="first-section">
                         <div className="text-overlay">
                             <h1>Smart insights, tailored solutions and measurable impact</h1>
-                            <Link to="/yetoo" className="learn-more-button-0">READ MORE</Link>
+                            <Link to="/about" className="learn-more-button-0">READ MORE</Link>
+                        </div>
+                    </div>
+                    <div className="second-section">
+                        <div className="second-section-container">
+                            <div className="info-box info-box1">
+                                <h2>What is Tafili Consulting?</h2>
+                                <p>
+                                    Tafili Consulting, founded in 2021, is dedicated to transforming and innovating business operations. Our mission is to provide expert consultants in finance and IT who drive growth and efficiency. We help optimize financial processes, improve profitability, and support strategic decision-making. Our IT consultants, skilled in JavaScript, Java, Python, SQL, and ETL, develop dashboards and reports that turn data into actionable insights, tailored to meet client needs.
+                                </p>
+                                <Link to="/about" className="learn-more-link">Read more</Link>
+                            </div>
+                            <div className="info-box info-box2">
+                                <h2>What is YETOO?</h2>
+                                <p>
+                                    Yetoo is a platform that enhances financial and operational data management. It offers tools for stock forecasting, detailed profit & loss analysis, and category-based stock management. With Yetoo, you can monitor stock levels, predict future inventory needs, and gain valuable financial insights. Our advanced forecasting algorithms ensure you stay ahead of stockouts and make informed decisions.
+                                </p>
+                                <Link to="/yetoo" className="learn-more-link">Read more</Link>
+                            </div>
+                            <div className="info-box info-box3">
+                                <h2>What are the members role?</h2>
+                                <p>
+                                    Drilon Tafili, founder and finance expert, guides our strategic vision. Alexandre Touat uses his development and data analysis skills to create optimized solutions. Maxime Van Rechem leverages his technical expertise to develop innovative data management solutions. Together, they ensure our clients receive comprehensive, integrated solutions in technology and finance.
+                                </p>
+                                <Link to="/about" className="learn-more-link">Read more</Link>
+                            </div>
                         </div>
                     </div>
 
+                    
 
                     <div className="video-container" id="yetoo">
                         <video ref={yetooVideoRef} className="background-video" muted playsInline>

@@ -34,13 +34,13 @@ function Header() {
                 <nav className={`navbar ${isScrolled ? 'hide' : ''}`}>
                     <ul className="navbar-menu">
                         <li><a href="/about">About us</a></li>
-                        <li><a href="/powerbi">Financial</a></li>
+                        <li><a href="/financial">Financial</a></li>
                         <li className="navbar-logo">
                             <a href="/">
                                 <img src={logo} alt="Logo"/>
                             </a>
                         </li>
-                        <li><a href="/team">Data analyst & IT</a></li>
+                        <li><a href="/dataanalyst">Data analyst & IT</a></li>
                         <li><a href="/contact">Contact us</a></li>
                     </ul>
                 </nav>

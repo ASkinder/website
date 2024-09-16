@@ -6,9 +6,10 @@ import Mbc from '../Mbc/Mbc';
 import Finance from '../Finance/Finance';
 import Contact from '../Contact/Contact';
 import Team from '../Company/TeamPage';
-import PowerBI from '../powerbi/PowerBI'
-import Yetoo from '../Yetoo/Yetoo'
-
+import PowerBI from '../powerbi/PowerBI';
+import Yetoo from '../Yetoo/Yetoo';
+import About from '../AboutAndTeam/AboutAndTeam';
+import DataAnalyst from '../DataAnalyst/DataAnalyst';
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
                 <Route path="/team" element={<Team/>} />
                 <Route path="/powerbi" element={<PowerBI/>} />
                 <Route path="/yetoo" element={<Yetoo/>} />
+                <Route path="/about" element={<About/>} />
+                <Route path="/dataanalyst" element={<DataAnalyst/>} />
             </Routes>
         </Router>
     </div>

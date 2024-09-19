@@ -269,3 +269,18 @@
         padding-bottom: 100px; /* Plus d'espace en bas */
     }
 }
+
+/* Style pour les écrans en dessous de 1300px */
+@media (max-width: 1300px) {
+    /* Cacher la navbar classique */
+    .navbar {
+        display: none;
+    }
+
+    /* Afficher le bouton de menu burger */
+    .menuIcon {
+        display: block;
+        opacity: 1; /* Le rendre visible */
+        pointer-events: all; /* Activer les clics */
+    }
+}

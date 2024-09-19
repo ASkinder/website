@@ -6,6 +6,9 @@ import trustCompany from '../Img/TrustCompany.png';
 import yetooVideo from '../Img/YetooLogoGarph.mp4';
 import powerbiVideo from '../Img/powerBIHD.mp4';
 import mbcVideo from '../Img/mbcHD.mp4';
+import icon1 from '../Img/icon-finance.png';
+import icon2 from '../Img/icon-finance2.png';
+import icon3 from '../Img/icon-finance3.png';
 import './Home.css';
 import {Link} from "react-router-dom";
 
@@ -90,6 +93,7 @@ function Home() {
                     <div className="second-section">
                         <div className="second-section-container">
                             <div className="info-box info-box1">
+                            <img src={icon3} alt="Finance Icon" className="info-icon"/>
                                 <h2>What is Tafili Consulting?</h2>
                                 <p>
                                     Tafili Consulting, founded in 2021, is dedicated to transforming and innovating business operations. Our mission is to provide expert consultants in finance and IT who drive growth and efficiency. We help optimize financial processes, improve profitability, and support strategic decision-making. Our IT consultants, skilled in JavaScript, Java, Python, SQL, and ETL, develop dashboards and reports that turn data into actionable insights, tailored to meet client needs.
@@ -97,6 +101,7 @@ function Home() {
                                 <Link to="/about" className="learn-more-link">Read more</Link>
                             </div>
                             <div className="info-box info-box2">
+                            <img src={icon1} alt="Data Management Icon" className="info-icon"/>
                                 <h2>What is YETOO?</h2>
                                 <p>
                                     Yetoo is a platform that enhances financial and operational data management. It offers tools for stock forecasting, detailed profit & loss analysis, and category-based stock management. With Yetoo, you can monitor stock levels, predict future inventory needs, and gain valuable financial insights. Our advanced forecasting algorithms ensure you stay ahead of stockouts and make informed decisions.
@@ -104,6 +109,7 @@ function Home() {
                                 <Link to="/yetoo" className="learn-more-link">Read more</Link>
                             </div>
                             <div className="info-box info-box3">
+                            <img src={icon2} alt="Members Role Icon" className="info-icon"/>
                                 <h2>What are the members role?</h2>
                                 <p>
                                     Drilon Tafili, founder and finance expert, guides our strategic vision. Alexandre Touat uses his development and data analysis skills to create optimized solutions. Maxime Van Rechem leverages his technical expertise to develop innovative data management solutions. Together, they ensure our clients receive comprehensive, integrated solutions in technology and finance.

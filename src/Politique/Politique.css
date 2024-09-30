@@ -1,0 +1,74 @@
+.Politique-container {
+    font-family: 'Arial', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1%;
+}
+
+.Politique-title {
+    color: #00264d;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #004080;
+    padding-bottom: 10px;
+}
+
+.Politique-subtitle {
+    color: #004080;
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.Politique-text {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+.Politique-link {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.Politique-link:hover {
+    text-decoration: underline;
+}
+
+.Politique-list {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.Politique-list-item {
+    margin-bottom: 10px;
+    list-style-type: disc;
+}
+
+.Politique-text:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .Politique-container {
+        padding: 15px;
+    }
+
+    .Politique-title {
+        font-size: 1.8em;
+    }
+
+    .Politique-subtitle {
+        font-size: 1.3em;
+    }
+
+    .Politique-text {
+        font-size: 1em;
+    }
+}

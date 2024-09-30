@@ -10,6 +10,7 @@ import PowerBI from '../powerbi/PowerBI';
 import Yetoo from '../Yetoo/Yetoo';
 import About from '../AboutAndTeam/AboutAndTeam';
 import DataAnalyst from '../DataAnalyst/DataAnalyst';
+import Politique from '../Politique/Politique';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
                 <Route path="/yetoo" element={<Yetoo/>} />
                 <Route path="/about" element={<About/>} />
                 <Route path="/dataanalyst" element={<DataAnalyst/>} />
+                <Route path="/politique-de-vie-prive" element={<Politique/>}/>
             </Routes>
         </Router>
     </div>

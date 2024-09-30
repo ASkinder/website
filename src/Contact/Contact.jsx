@@ -1,8 +1,9 @@
-import React, { useEffect } from 'react';
+/*import React, { useEffect } from 'react';
 import emailjs from 'emailjs-com';
-import './Contact.css';
+import './Contact.css';*/
 
 function Contact() {
+  /*
     useEffect(() => {
         // Initialisation EmailJS
         emailjs.init("Unj8iqUiNvHBW8Iij");
@@ -59,6 +60,7 @@ function Contact() {
         </div>
     </div>
   );
+*/
 }
 
 export default Contact;

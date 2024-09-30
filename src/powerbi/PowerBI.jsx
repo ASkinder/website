@@ -1,6 +1,5 @@
 import React from 'react';
 import './PowerBI.css';
-import powerBIgraph from '../Img/powerBIgraph.png';
 
 function PowerBI() {
     return (
@@ -19,19 +18,33 @@ function PowerBI() {
 
             {/* Second Section */}
             <section className="features-section-bi">
-                <div className="features-list">
-                    <ul>
-                        <li>Réunissez l'ensemble de vos données</li>
-                        <li>Visualiser vos détails en quelques clics</li>
-                        <li>Gérer vos futurs investissements grâce aux forecasts</li>
-                        <li>Optimisez vos processus décisionnels</li>
-                        <li>Créez des rapports dynamiques et intuitifs</li>
-                    </ul>
-                </div>
-                <div className="features-image">
-                    <img src={powerBIgraph} alt="Power BI Graph"/>
+                <div className="features-overlay">
+                    <div className="features-content">
+                        <h2 className="features-title">Pourquoi choisir Power BI ?</h2>
+                        <div className="feature-item">
+                            <i className="icon-database"></i>
+                            <p>Réunissez l'ensemble de vos données</p>
+                        </div>
+                        <div className="feature-item">
+                            <i className="icon-visual"></i>
+                            <p>Visualisez vos détails en quelques clics</p>
+                        </div>
+                        <div className="feature-item">
+                            <i className="icon-forecast"></i>
+                            <p>Gérez vos futurs investissements grâce aux forecasts</p>
+                        </div>
+                        <div className="feature-item">
+                            <i className="icon-decision"></i>
+                            <p>Optimisez vos processus décisionnels</p>
+                        </div>
+                        <div className="feature-item">
+                            <i className="icon-report"></i>
+                            <p>Créez des rapports dynamiques et intuitifs</p>
+                        </div>
+                    </div>
                 </div>
             </section>
+
 
             <hr className="section-divider"/>
 

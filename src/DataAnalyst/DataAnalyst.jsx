@@ -43,35 +43,56 @@ const DataAnalystIT = () => {
                 <h2>Common Tools and Technologies</h2>
                 <div className="tools-grid">
                     <div className="tool-card">
+                        <div className="card-icon">⚛️</div>
                         <h3>Javascript React</h3>
-                        <p>React is a popular JavaScript library for building dynamic and responsive user interfaces. It simplifies the process of creating complex web applications by allowing developers to build reusable components, manage the state of their application efficiently, and create smooth, interactive user experiences.</p>
-                    </div>
+                        <div className="info-text-data">
+                        React is a popular JavaScript library for building dynamic user interfaces. It helps developers create reusable components, manage application state efficiently, and build smooth, interactive web experiences.</div>
+                        </div>
                     <div className="tool-card">
+                        <div className="card-icon">💾</div>
                         <h3>SQL</h3>
-                        <p>Structured Query Language (SQL) is essential for querying and managing data stored in relational databases.</p>
+                        <div className="info-text-data">
+                            Structured Query Language (SQL) is essential for querying and managing data stored in relational databases.
+                        </div>
                     </div>
                     <div className="tool-card">
+                        <div className="card-icon">🐍</div>
                         <h3>Python</h3>
-                        <p>Python is widely used for data analysis, offering libraries such as Pandas, NumPy, and Matplotlib for processing and visualizing data.</p>
+                        <div className="info-text-data">
+                            Python is widely used for data analysis, offering libraries such as Pandas, NumPy, and Matplotlib for processing and visualizing data.
+                        </div>
                     </div>
                     <div className="tool-card">
+                        <div className="card-icon">📊</div>
                         <h3>Power BI</h3>
-                        <p>A business analytics tool that enables users to create interactive dashboards and reports, transforming raw data into actionable insights.</p>
+                        <div className="info-text-data">
+                            A business analytics tool that enables users to create interactive dashboards and reports, transforming raw data into actionable insights.
+                        </div>
                     </div>
                     <div className="tool-card">
+                        <div className="card-icon">📈</div>
                         <h3>Tableau</h3>
-                        <p>Another powerful tool for data visualization, widely used to create dynamic and shareable dashboards.</p>
+                        <div className="info-text-data">
+                            Another powerful tool for data visualization, widely used to create dynamic and shareable dashboards.
+                        </div>
                     </div>
                     <div className="tool-card">
+                        <div className="card-icon">📊</div>
                         <h3>Excel</h3>
-                        <p>A staple in data analysis for handling small datasets, performing basic statistical analysis, and generating visualizations.</p>
+                        <div className="info-text-data">
+                            A staple in data analysis for handling small datasets, performing basic statistical analysis, and generating visualizations.
+                        </div>
                     </div>
                     <div className="tool-card">
+                        <div className="card-icon">🔄</div>
                         <h3>ETL Tools</h3>
-                        <p>ETL (Extract, Transform, Load) tools like Talend or Apache Nifi are used to automate the flow of data from different sources into data warehouses.</p>
+                        <div className="info-text-data">
+                            ETL (Extract, Transform, Load) tools like Talend or Apache Nifi are used to automate the flow of data from different sources into data warehouses.
+                        </div>
                     </div>
                 </div>
             </section>
+
 
             <section className="career-outlook-section">
                 <h2>Career Outlook for Data Analysts and IT Professionals</h2>

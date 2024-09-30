@@ -7,65 +7,53 @@
 
 .content-wrapper {
     color: white;
-    height: 150%;
     display: grid;
-    grid-template-columns: auto 1fr; /* Première colonne de taille automatique, deuxième colonne occupant le reste de l'espace */
-    flex-direction: column;
+    grid-template-columns: auto 1fr;
     align-items: center;
-    max-width: 100%; /* Ajustez la largeur maximale selon vos besoins */
     width: 100%;
 }
+
 .content-wrapper2 {
-    display: grid;
-    grid-template-columns: auto 1fr; /* Première colonne de taille automatique, deuxième colonne occupant le reste de l'espace */
-    flex-direction: column;
+    grid-template-columns: auto 1fr;
     align-items: center;
-    max-width: 100%; /* Ajustez la largeur maximale selon vos besoins */
     width: 100%;
 }
 
 .rectangle-gauche {
     width: 700px;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 20%;
-    margin-top: -30%;
 }
 
 .mbc-title {
     font-family: Inter, serif;
     text-align: center;
     font-size: 64px;
-    letter-spacing: 0;
-    margin-bottom: 20px; /* Espacement entre le titre et le paragraphe */
+    margin-bottom: 20px;
 }
 
 .mbc-intro {
     font-family: Inter, serif;
     text-align: center;
     font-size: 20px;
-    letter-spacing: 0;
-    margin-bottom: 20px; /* Espacement entre le paragraphe et la vidéo */
+    margin-bottom: 20px;
 }
 
 .video-container-mbc {
     width: 100%;
     height: auto;
     background-color: #b30021;
-    padding-top: 10%;
-
+    padding-top: 5%;
     background-image: url('../Img/fond-video.jpg');
-    /* background-size: cover;  Ajuster la taille de l'image pour couvrir tout le conteneur */
-    background-position: center; /* Centrer l'image horizontalement et verticalement */
-
+    background-position: center;
+    padding-bottom: 5%;
 }
 
 .videoMBC {
-    margin-bottom: 10%;
     width: 60%;
-    height: auto; /* Pour occuper exactement la même hauteur que le rectangle-gauche */
+    height: auto;
     margin-left: 30%;
     background: #333;
     padding: 9px;
@@ -74,183 +62,151 @@
 }
 
 .mbc-text2 {
-    color:rgba(0, 0, 0, 1);
-    width:490px;
-    height:150px;
+    color: rgba(0, 0, 0, 1);
+    width: 490px;
+    height: 150px;
     font-family: Kadwa, serif;
-    text-align:left;
-    font-size:48px;
-    letter-spacing:-2px;
+    text-align: left;
+    font-size: 48px;
 }
 
 .mbc-text3 {
-    color:rgba(0, 0, 0, 1);
-    width:535px;
-    height:224px;
+    color: rgba(0, 0, 0, 1);
+    width: 535px;
+    height: 224px;
     font-family: Inter, serif;
-    text-align:left;
-    font-size:18px;
+    text-align: left;
+    font-size: 18px;
 }
 
-
-.part2-gauche {
-    width: 100%;
-    height: 700px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.part2-droite {
-    height: 700px;
-    width: 1250px;
-    display: grid;
-    grid-template-columns: auto 1fr; /* Première colonne de taille automatique, deuxième colonne occupant le reste de l'espace */
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
 
 .part2-title {
     color: rgba(0, 0, 0, 1);
     font-family: Geneva, Verdana, sans-serif;
     text-align: left;
     font-size: 64px;
-    letter-spacing: -1px;
-    margin-top: 120px;
-    margin-bottom: 20px;
-    margin-left: 30%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: 10%;
     line-height: 75px;
 }
+
 .part2-texte {
-    color:rgba(0, 0, 0, 1);
-    width:735px;
-    height:224px;
+    color: rgba(0, 0, 0, 1);
+    width: 50%;
     font-family: Inter, serif;
-    text-align:left;
-    font-size:18px;
-    margin-left: 28%;
-    margin-bottom: 20px;
-}
-.colonne_1 {
-    margin-left: 40%;
-}
-.colonne_2 {
-    margin-left: -10%;
-}
-.colonne_1, .colonne_2 {
-    flex: 1;
-    padding: 0 10px; /* Ajoutez une marge intérieure pour séparer les colonnes */
-}
-.colonne_1 img {
-    margin-top: 30px;
-    width: 125%; /* Ajustez la valeur selon vos besoins */
+    text-align: center;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.colonne_2 img {
-    margin-top: 30px;
-    width: 45%;
+
+
+.info-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
+.info-card {
+    position: relative;
+    background: linear-gradient(to bottom right, #ffffff, #a7e1e6df); /* Dégradé de couleur */
+    border-radius: 15px; /* Coins arrondis */
+    width: 250px; /* Largeur de chaque carte */
+    height: 300px; /* Hauteur de chaque carte */
+    margin: 20px; /* Espace entre les cartes */
+    padding: 20px; /* Espacement intérieur */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Ombre */
+    overflow: hidden; /* Cacher tout contenu qui dépasse */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation */
+}
+
+.info-card:hover {
+    transform: translateY(-10px); /* Légère élévation au survol */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5); /* Ombre plus marquée */
+}
+
+.card-icon {
+    font-size: 50px; /* Taille de l'icône */
+    text-align: center; /* Centrer l'icône */
+    margin-bottom: 15px; /* Espacement sous l'icône */
+    color: black;  /* Couleur de l'icône */
+    margin-top: 35px;
+}
+
+.card-title {
+    font-size: 1.7em; /* Taille de l'icône */
+    font-weight: bold; /* Police épaisse */
+}
+
+
+.info-text {
+    visibility: hidden; /* Masquer le texte par défaut */
+    position: absolute; /* Positionnement absolu */
+    top: 0; /* Positionner en haut */
+    left: 0; /* Positionner à gauche */
+    right: 0; /* Positionner à droite */
+    bottom: 0; /* Positionner en bas */
+    background-color: rgba(0, 0, 0, 0.8); /* Couleur de fond semi-transparente */
+    color: white; /* Couleur du texte */
+    padding: 20px; /* Espacement intérieur */
+    border-radius: 15px; /* Coins arrondis */
+    display: flex; /* Flex pour centrer le contenu */
+    justify-content: center; /* Centre horizontal */
+    align-items: center; /* Centre vertical */
+    text-align: center; /* Centre le texte */
+    z-index: 1; /* S'assurer que le texte est au-dessus de la carte */
+    transition: visibility 0.3s ease-in; /* Animation pour la visibilité */
+    font-size: 1.5em;
+}
+
+.info-card:hover .info-text {
+    visibility: visible; /* Affiche le texte au survol */
+}
+
+
+
+
+
+/* Media Queries pour rendre la vidéo responsive */
 
 @media (max-width: 1700px) {
 
-    .colonne_1 img {
-        width: 100%; /* Ajustez la valeur selon vos besoins */
-    }
 
-    .colonne_2 img {
-        width: 53%;
-    }
-    .colonne_2 {
-        margin-left: -30%;
-    }
-    .content-wrapper2 {
-        display: flex;
-    }
-
-    .part2-gauche {
-        width: 80%;
-        height: 500px;
-        margin-bottom: 0;
-        margin-left: -10%;
-    }
-
-    .part2-droite {
-        height: 500px;
-        width: 950px;
-    }
     .part2-texte {
-        text-align: center; /* Aligner le texte à gauche pour la lisibilité */
-        max-width: 774px; /* Limitez la largeur maximale */
+        text-align: center;
+        max-width: 774px;
     }
+
     .part2-title {
-        text-align: center; /* Aligner le texte à gauche pour la lisibilité */
+        text-align: center;
         max-width: 800px;
     }
 }
 
-@media (max-width: 700px) {
-    .part2-droite {
-        grid-template-columns: 1fr; /* Une seule colonne */
-        margin-top: 15%;
-        margin-bottom: 140%;
+@media (max-width: 1500px) {
+    .content-wrapper {
+        grid-template-columns: 1fr; /* Change de layout pour une seule colonne */
     }
 
-    .colonne_1, .colonne_2 {
-        max-width: 100%; /* Chaque colonne prendra la largeur complète */
-        margin-left: 0; /* Supprimez la marge à gauche */
-    }
-    .colonne_1 img {
-        width: 40%; /* Ajustez la valeur selon vos besoins */
-    }
-
-    .colonne_2 img {
-        width: 40%;
-    }
-}
-.mbc_title3 {
-    color:rgba(0, 0, 0, 1);
-    width:874px;
-    height:105px;
-    font-family:Kadwa, Verdana, sans-serif;
-    text-align:left;
-    font-size:48px;
-    letter-spacing:-2px;
-}
-.mbc_texte3 {
-    color: rgba(131.00000739097595, 134.00000721216202, 150.0000062584877, 1);
-    font-family: Sofia Pro, serif;
-    text-align: center;
-    font-size: 18px; /* Ajustez la taille de la police */
-    letter-spacing: 2px;
-    word-wrap: break-word; /* Permet le passage à la ligne si nécessaire */
-}
-.mbc_texte3_div {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    width: 90%; /* Ajustez la largeur selon vos besoins */
-    max-width: 774px; /* Limitez la largeur maximale */
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.mbc_part3 img {
-    width: 50%;
-}
-
-
-@media (max-width: 950px) {
-    .mbc_part3 img {
-        width: 80%;
-    }
-}
-@media (max-width: 500px) {
-    .mbc_part3 img {
+    .rectangle-gauche {
         width: 90%;
+        margin-left: 5%;
+        margin-top: 0; /* Enlever le margin-top négatif pour petits écrans */
+    }
+
+    .videoMBC {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 20px; /* Ajout d'espace au-dessus de la vidéo */
+    }
+}
+
+@media (max-width: 700px) {
+    .videoMBC {
+        width: 100%; /* La vidéo occupe toute la largeur */
+        margin-left: 0;
+        margin-bottom: 20px;
     }
 }

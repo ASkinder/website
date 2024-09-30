@@ -71,48 +71,105 @@
 }
 
 .it-image {
-    margin-right: 3%;
+  margin-right: 3%;
 }
 
-/* Section des outils et technologies */
-.tools-section {
-  margin-bottom: 100px;
-}
-
+/* Styles pour les cartes d'outils */
+/* Styling for Common Tools and Technologies title */
 .tools-section h2 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 4em; /* Titre plus grand pour cette section */
-  color: #2c3e50;
-  margin-bottom: 50px;
-  text-align: center;
+  font-family: 'Poppins', sans-serif; /* Keep the existing modern font */
+  font-size: 4em; /* Large, impactful font size */
+  color: #2c3e50; /* Dark, elegant color */
+  text-align: center; /* Center the text */
+  margin-bottom: 100px; /* Space below the title */
+  
+  /* Add letter spacing for a modern look */
+  letter-spacing: 2px;
+
+  /* Add subtle shadow for depth */
+  text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+
+  /* Add a gradient background for a unique style */
+  background: linear-gradient(to right, #6728cd, #aaa5ee);
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent;
+
+  /* Add animation for a smooth effect */
+  transition: transform 0.3s ease-in-out;
+}
+
+.tools-section h2:hover {
+  /* Slight hover effect to make the title interactive */
+  transform: scale(1.05);
+}
+
+
+.tools-section {
+  margin-bottom: 10%;
 }
 
 .tools-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* Augmenter la taille des colonnes */
-  gap: 40px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 35px;
 }
 
 .tool-card {
+  position: relative; /* Position relative pour que l'info-text s'affiche correctement */
   background-color: #f7f7f7;
-  padding: 35px; /* Plus de padding pour les cartes */
-  border-radius: 10px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(to bottom right, #dbd7d7, #f7f7f7);
+  border-radius: 15px;
+  padding: 35px;
   text-align: center;
+  overflow: hidden; /* Masquer le texte en dehors des limites de la carte */
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  width: 280px; /* Largeur de chaque carte */
+  height: 300px; /* Hauteur de chaque carte */
 }
 
+.tool-card:hover {
+  transform: translateY(-15px); /* Légère élévation au survol */
+}
+
+.card-icon {
+  font-size: 50px;
+  color: black; /* Icône en noir et blanc */
+  margin-bottom: 15px;
+}
+
+.info-text-data {
+  visibility: hidden; /* Masquer le texte par défaut */
+  position: absolute; /* Positionnement absolu */
+  top: 0; /* Positionner en haut */
+  left: 0; /* Positionner à gauche */
+  right: 0; /* Positionner à droite */
+  bottom: 0; /* Positionner en bas */
+  background-color: rgba(0, 0, 0, 0.8); /* Couleur de fond semi-transparente */
+  color: white; /* Couleur du texte */
+  padding: 20px; /* Espacement intérieur */
+  border-radius: 15px; /* Coins arrondis */
+  display: flex; /* Flex pour centrer le contenu */
+  justify-content: center; /* Centre horizontal */
+  align-items: center; /* Centre vertical */
+  text-align: center; /* Centre le texte */
+  z-index: 2; /* S'assurer que le texte est au-dessus de la carte */
+  transition: visibility 0.3s ease-in; /* Animation pour la visibilité */
+  font-size: 1.8em;
+}
+
+.tool-card:hover .info-text-data {
+  visibility: visible; /* Masquer le texte par défaut */
+}
+
+/* Styles pour le texte */
 .tool-card h3 {
   font-family: 'Poppins', sans-serif;
   color: #2c3e50;
   margin-bottom: 20px;
-  font-size: 2.5em; /* Agrandir les titres des outils */
+  font-size: 2.5em;
 }
 
-.tool-card p {
-  font-family: 'Roboto', sans-serif;
-  color: #555;
-  font-size: 1.8em; /* Texte des descriptions encore plus grand */
-}
 
 /* Section des perspectives de carrière */
 .career-outlook-section {

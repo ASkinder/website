@@ -1,12 +1,6 @@
 import React from 'react';
 import './Mbc.css';
 import videoMbc from '../Img/MicrosoftBusinessCentral.mp4'
-import col1 from '../Img/mbc_col1.png'
-import col2 from '../Img/mbc_col2.png'
-import mbc3_1 from '../Img/mbc3_1.png'
-import mbc3_2 from '../Img/mbc3_2.png'
-import mbc3_3 from '../Img/mbc3_3.png'
-import mbc3_4 from '../Img/mbc3_4.png'
 
 function Mbc() {
     return (
@@ -31,52 +25,73 @@ function Mbc() {
             </div>
 
             </div>
-            <br/><br/><br/><br/><br/>
             <div className="Mbc1">
                 <div className="content-wrapper2">
-                    <div className="part2-gauche">
-                        <div className="part2-title">
-                            Why choose business central for your teams ?
-                        </div>
-                        <div className="part2-texte">
-                            Implementing Business Central, such as Microsoft Dynamics 365 Business Central, can greatly benefit a company
-                            by providing an integrated and centralized platform for managing key business functions. This all-in-one solution
-                            streamlines processes across finance, operations, sales, and customer service. It enhances efficiency, enables real-time
-                            insights through robust reporting and analytics, and supports better decision-making.
-                        </div>
+                    
+                    <div className="part2-title">
+                        Why choose business central for your teams ?
                     </div>
-                    <div className="part2-droite">
-                        <div className="colonne_1">
-                            <img src={col1} alt={"mbc colonne 1"}/>
-                        </div>
-                        <div className="colonne_2">
-                            <img src={col2} alt={"mbc colonne 2"}/>
-                        </div>
+                    <div className="part2-texte">
+                        Implementing Business Central, such as Microsoft Dynamics 365 Business Central, can greatly benefit a company
+                        by providing an integrated and centralized platform for managing key business functions. This all-in-one solution
+                        streamlines processes across finance, operations, sales, and customer service. It enhances efficiency, enables real-time
+                        insights through robust reporting and analytics, and supports better decision-making.
+                    </div>
+            
+                </div>
+            </div>
+            <div class="info-cards">
+                <div class="info-card">
+                    <div class="card-icon">🔒</div>
+                    <div class="card-title">Sécurité</div>
+                    <div class="info-text">
+                        Nous garantissons la sécurité de vos données avec des protocoles de sécurité robustes.
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="card-icon">⏰</div>
+                    <div class="card-title">Disponibilité</div>
+                    <div class="info-text">
+                        Nos services sont disponibles 24/7 pour répondre à vos besoins.
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="card-icon">⏱️</div>
+                    <div class="card-title">Performance</div>
+                    <div class="info-text">
+                        Optimisation des performances pour garantir une expérience utilisateur fluide et rapide.
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="card-icon">🛡️</div>
+                    <div class="card-title">Durabilité</div>
+                    <div class="info-text">
+                        Solutions durables qui résistent aux défis de l'avenir.
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="card-icon">⚙️</div>
+                    <div class="card-title">Module</div>
+                    <div class="info-text">
+                        Des modules personnalisables pour répondre à vos besoins spécifiques.
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="card-icon">🤝</div>
+                    <div class="card-title">Accompagnement</div>
+                    <div class="info-text">
+                        Un accompagnement professionnel pour assurer votre succès à long terme.
                     </div>
                 </div>
             </div>
 
-            <br/><br/><br/> <br/><br/><br/> <br/><br/><br/> <br/><br/><br/> <br/>
-            <div>
-                <span className="mbc_title3">What can we do with business central ?</span>
-                <br/> <br/> <br/> <br/> <br/>
-                <div className="mbc_texte3_div">
-                    <span className="mbc_texte3">Decentralization is complicated stuff, we make it simple while offering a
-                    new standard in security, performance, and pricing.</span>
-                </div>
 
-            </div>
-            <br/><br/><br/> <br/><br/>
-            <div className="mbc_part3">
-                <img src={mbc3_1} alt={"mbc part 3"}/>
-                <br/> <br/> <br/>
-                <img src={mbc3_2} alt={"mbc part 3"}/>
-                <br/> <br/> <br/>
-                <img src={mbc3_3} alt={"mbc part 3"}/>
-                <br/> <br/> <br/>
-                <img src={mbc3_4} alt={"mbc part 3"}/>
-            </div>
-            <br/><br/><br/> <br/><br/><br/> <br/><br/><br/>
+            <br/> <br/> <br/>
         </div>
     );
 }

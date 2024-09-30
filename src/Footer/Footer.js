@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import emailjs from 'emailjs-com'; // Import EmailJS
 import './Footer.css';
-import contact from '../Img/footerFinal.png';
 
 function Footer() {
     useEffect(() => {

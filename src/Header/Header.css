@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
 .App-header {
     position: fixed; /* Place le header en haut de la page */
     top: 0;
     left: 0;
     width: 100%;
-    /*  background: transparent; */
+    /*  background: transparent; 
+    background: rgba(255, 255, 255, 0.9);*/
     z-index: 10; /* Assure que le header soit au-dessus de la vidéo */
-    padding: 10px 20px; /* Ajuste le padding pour le contenu */
+    padding: 0; /* Ajuste le padding pour le contenu */
+    margin: 0;
     transition: background 0.3s ease-in-out; /* Optionnel: ajout d'une animation pour le changement de fond */
 }
 
@@ -17,19 +21,22 @@
 
 .navbar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;/* Aligne les éléments à gauche et à droite */
     align-items: center; /* Assure que les éléments de la navbar sont alignés verticalement */
     background: rgba(255, 255, 255);
-    padding: 10px 20px;
+    padding: 0;/* Navbar plus fine */
+    margin-top: -27px;
     transition: opacity 0.3s ease-in-out;
     position: relative; /* Permet au logo d'être positionné absolument */
     overflow: hidden; /* Assure que tout débordement du logo est caché */
     height: 100%;
+    width: 100%; /* Prend toute la largeur */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-menu {
     display: flex;
-    gap: 50px;
+    gap: 30px;/* espace entre les liens */
     list-style: none;
     padding: 0;
     margin: 0;
@@ -43,12 +50,23 @@
 .navbar-menu li a {
     text-decoration: none;
     color: #000;
-    font-size: 0.8em;
-    padding: 0 15px;
+    font-size: 0.65em;
+    padding: 0 10px;
     transition: color 0.3s;
     position: relative; /* Permet d'utiliser le ::after sur le lien */
-    font-family: 'Apperel', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
 }
+
+/* Style pour l'icône du premier lien */
+.home-icon {
+    height: 20px;  /* Ajuster la taille de l'icône selon tes préférences */
+    width: 20px;
+    margin-right: 5px;  /* Un petit espace entre l'icône et le texte */
+    vertical-align: middle;  /* Assurer un bon alignement vertical avec le texte */
+    margin-top: -5px; 
+}
+
 
 /* Effet de ligne colorée sous chaque lien */
 .navbar-menu li a::after {
@@ -70,31 +88,36 @@
 
 
 /* Couleurs différentes pour chaque lien */
-.navbar-menu li:nth-child(1) a:hover::after {
+.navbar-menu li:nth-child(2) a:hover::after {
     background-color: rgb(28, 121, 184); /* Couleur du premier lien */
     width: 100%;
 }
+.navbar-menu li:nth-child(2) a:hover {
+    color: rgb(28, 121, 184); /* Couleur du premier lien */
+}
 
-.navbar-menu li:nth-child(2) a:hover::after {
+.navbar-menu li:nth-child(3) a:hover::after {
     background-color: rgb(184, 71, 28); /* Couleur du deuxième lien */
     width: 100%;
 }
-
-/*
-.navbar-menu li:nth-child(3) a:hover::after {
-    background-color: rgb(71, 184, 28);
-    width: 100%;
+.navbar-menu li:nth-child(3) a:hover {
+    color: rgb(184, 71, 28); /* Couleur du deuxième lien */
 }
-*/
 
 .navbar-menu li:nth-child(4) a:hover::after {
-    background-color: rgb(71, 184, 28); /* Couleur du quatrième lien */
+    background-color: rgb(255, 211, 73);
     width: 100%;
+}
+.navbar-menu li:nth-child(4) a:hover {
+    color: rgb(255, 211, 73);
 }
 
 .navbar-menu li:nth-child(5) a:hover::after {
-    background-color: rgb(255, 211, 73); /* Couleur du cinquième lien */
+    background-color: rgb(71, 184, 28); /* Couleur du quatrième lien */
     width: 100%;
+}
+.navbar-menu li:nth-child(5) a:hover {
+    color: rgb(71, 184, 28); /* Couleur du quatrième lien */
 }
 
 /* Séparateur vertical
@@ -112,13 +135,13 @@
 
 /* Styles pour le logo */
 .navbar-logo {
-    margin: 0 20px; /* Espacement autour du logo */
+    margin-right: -20%; /* Espacement autour du logo */
 }
 
 .navbar-logo img {
-    height: 110px; /* Ajustez la taille du logo selon vos préférences */
+    height: 50px; /* Ajustez la taille du logo selon vos préférences */
     width: auto;
-    object-fit: contain;
+    /* object-fit: contain; */
 }
 
 /* Cacher la navbar quand on scrolle */
@@ -271,7 +294,7 @@
 }
 
 /* Style pour les écrans en dessous de 1300px */
-@media (max-width: 1300px) {
+@media (max-width: 1000px) {
     /* Cacher la navbar classique */
     .navbar {
         display: none;
@@ -283,4 +306,17 @@
         opacity: 1; /* Le rendre visible */
         pointer-events: all; /* Activer les clics */
     }
+}
+
+@media (max-width: 1250px) {
+    /* Cacher la navbar classique */
+    .navbar-logo {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 1650px) {
+   .navbar {
+    margin-top: -15px;
+   }
 }

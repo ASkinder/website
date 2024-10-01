@@ -19,7 +19,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: opacity 1s ease; /* Transition de fondu */
+    transition: opacity 0s ease; /* Transition de fondu */
 }
 
 .intro-video {
@@ -57,7 +57,7 @@
     align-items: center;
     justify-content: center;
     text-align: center; /* Centre le texte */
-    animation: fadeIn 2s forwards; /* Animation de fondu */
+    animation: fadeIn 1.5s forwards; /* Animation de fondu */
     overflow: hidden;
 
 }
@@ -97,7 +97,7 @@
     display: inline-block;
     color: #fff;
     text-decoration: none !important;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     padding: 8px 16px;
     position: relative;
     transition: color 0.3s ease;
@@ -212,17 +212,34 @@
 }
 
 .learn-more-link {
-    font-size: 2em;
+    display: inline-block;
+    position: relative;
+    transition: color 0.3s ease;
+    font-size: 1.7em;
     color: #000000; /* Couleur du texte du lien */
-    text-decoration: none; /* Supprime le soulignement */
+    text-decoration: none !important;    /* Supprime le soulignement */
     font-weight: bold;
+    cursor: pointer;
 }
 
 .learn-more-link:hover {
-    text-decoration: none;
-    border-bottom: 2px solid white; /* Ligne blanche sous le texte au survol */
+    color: #000000;
 }
-
+/* Style au survol : soulignement avec une ligne  */
+.learn-more-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000000;
+    transition: width 0.3s ease;
+}
+/* Animation au survol pour faire apparaître la ligne */
+.learn-more-link:hover::after {
+    width: 100%;
+}
 
 .video-container {
     margin-top: 0px;
@@ -283,36 +300,60 @@
 }
 
 .learn-more-button-1 {
-    background-color: #111111; /* Couleur de fond */
-    color: #ffffff; /* Couleur du texte */
-    border: none; /* Supprimer la bordure */
-    padding: 10px 20px; /* Ajouter un espacement intérieur */
-    font-size: 20px; /* Taille de la police */
+    color: #15033b; /* Couleur du texte */
+    padding: 20px 20px; /* Ajouter un espacement intérieur */
+    font-size: 1.6rem; /* Taille de la police */
     cursor: pointer; /* Afficher le curseur pointer */
-    border-radius: 10px; /* Ajouter une bordure arrondie */
-    text-decoration: none; /* Supprimer le soulignement par défaut */
+    text-decoration: none !important; /* Supprimer le soulignement par défaut */
+    display: inline-block;
+    position: relative;
+    transition: color 0.3s ease;
 }
 .learn-more-button-1:hover {
-    background-color: #f6f3f3; /* Couleur de fond au survol */
-    border-color: #0a0a0a;
     color: #15033b;
-    text-decoration: none;
 }
+/* Style au survol : soulignement avec une ligne  */
+.learn-more-button-1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #111111;
+    transition: width 0.3s ease;
+}
+/* Animation au survol pour faire apparaître la ligne */
+.learn-more-button-1:hover::after {
+    width: 100%;
+}
+
 .learn-more-button-2 {
-    background-color: #f6f3f3; /* Couleur de fond */
-    color: #15033b; /* Couleur du texte */
-    border: none; /* Supprimer la bordure */
-    padding: 10px 20px; /* Ajouter un espacement intérieur */
-    font-size: 20px; /* Taille de la police */
+    color: #f6f3f3; /* Couleur de fond */
+    padding: 20px 20px; /* Ajouter un espacement intérieur */
+    font-size: 1.6rem; /* Taille de la police */
     cursor: pointer; /* Afficher le curseur pointer */
-    border-radius: 10px; /* Ajouter une bordure arrondie */
-    text-decoration: none; /* Supprimer le soulignement par défaut */
+    text-decoration: none !important; /* Supprimer le soulignement par défaut */
+    display: inline-block;
+    position: relative;
+    transition: color 0.3s ease;
 }
 .learn-more-button-2:hover {
-    background-color: #111111; /* Couleur de fond au survol */
-    border-color: #f6f3f3;
-    color: #ffffff;
-    text-decoration: none;
+    color: #f6f3f3; /* Couleur de fond */
+}
+.learn-more-button-2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #f6f3f3;
+    transition: width 0.3s ease;
+}
+/* Animation au survol pour faire apparaître la ligne */
+.learn-more-button-2:hover::after {
+    width: 100%;
 }
 
 @media (max-width: 880px) {
@@ -329,29 +370,12 @@
     }
 
     .learn-more-button-1, .learn-more-button-2 {
-        background-color: #111111; /* Couleur de fond */
-        color: #ffffff; /* Couleur du texte */
-        border: none; /* Supprimer la bordure */
-        font-size: 20px; /* Taille de la police */
-        cursor: pointer; /* Afficher le curseur pointer */
-        border-radius: 10px; /* Ajouter une bordure arrondie */
-        text-decoration: none; /* Supprimer le soulignement par défaut */
         font-size: 1.5rem; /* Réduire la taille du bouton sur mobile */
         padding: 8px 12px; /* Réduire le padding pour que le bouton soit plus petit */
         margin-top: 20px; /* Ajouter un espace au-dessus du bouton */
-    }
-    .learn-more-button-1:hover {
-        background-color: #f6f3f3; /* Couleur de fond au survol */
-        border-color: #0a0a0a;
         color: #15033b;
-        text-decoration: none;
     }
-    .learn-more-button-2:hover {
-        background-color: #f6f3f3; /* Couleur de fond au survol */
-        border-color: #0a0a0a;
-        color: #15033b;
-        text-decoration: none;
-    }
+    
 }
 
 @media (max-width: 1200px) {

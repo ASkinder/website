@@ -1,7 +1,7 @@
 import React, {useEffect, useRef, useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import videoLogo from '../Img/TafiliAnimation1.mp4';
+import videoLogo from '../Img/TafiliAnimation2.mp4';
 import trustCompany from '../Img/TrustCompany.png';
 import yetooVideo from '../Img/YetooLogoGarph.mp4';
 import powerbiVideo from '../Img/powerBIHD.mp4';
@@ -62,7 +62,7 @@ function Home() {
     // Fonction pour lancer l'animation de fondu et masquer la vidéo d'intro
     const handleIntroVideoEnd = () => {
         setFadeOut(true); // Déclenche l'animation de fondu
-        setTimeout(() => setShowIntroVideo(false), 1000); // Cache la vidéo après l'animation de fondu (1s)
+        setTimeout(() => setShowIntroVideo(false), 10); // Cache la vidéo après l'animation de fondu (1s)
     };
 
     return (
@@ -99,7 +99,7 @@ function Home() {
                                 <p>
                                     Tafili Consulting, founded in 2021, is dedicated to transforming and innovating business operations. Our mission is to provide expert consultants in finance and IT who drive growth and efficiency. We help optimize financial processes, improve profitability, and support strategic decision-making. Our IT consultants, skilled in JavaScript, Java, Python, SQL, and ETL, develop dashboards and reports that turn data into actionable insights, tailored to meet client needs.
                                 </p>
-                                <Link to="/about" className="learn-more-link">Read more</Link>
+                                <Link to="/about" className="learn-more-link">READ MORE</Link>
                             </div>
                             <div className="info-box info-box2">
                             <img src={icon1} alt="Data Management Icon" className="info-icon"/>
@@ -107,7 +107,7 @@ function Home() {
                                 <p>
                                     Yetoo is a platform that enhances financial and operational data management. It offers tools for stock forecasting, detailed profit & loss analysis, and category-based stock management. With Yetoo, you can monitor stock levels, predict future inventory needs, and gain valuable financial insights. Our advanced forecasting algorithms ensure you stay ahead of stockouts and make informed decisions.
                                 </p>
-                                <Link to="/yetoo" className="learn-more-link">Read more</Link>
+                                <Link to="/yetoo" className="learn-more-link">READ MORE</Link>
                             </div>
                             <div className="info-box info-box3">
                             <img src={icon2} alt="Members Role Icon" className="info-icon"/>
@@ -115,7 +115,7 @@ function Home() {
                                 <p>
                                     Drilon Tafili, founder and finance expert, guides our strategic vision. Alexandre Touat uses his development and data analysis skills to create optimized solutions. Maxime Van Rechem leverages his technical expertise to develop innovative data management solutions. Together, they ensure our clients receive comprehensive, integrated solutions in technology and finance.
                                 </p>
-                                <Link to="/about" className="learn-more-link">Read more</Link>
+                                <Link to="/about" className="learn-more-link">READ MORE</Link>
                             </div>
                         </div>
                     </div>
@@ -133,7 +133,7 @@ function Home() {
                                 and tools for performance monitoring and optimization. Flexible and user-friendly, Yetoo
                                 integrates with existing systems. Try it now for data-driven decisions.
                             </h1>
-                            <Link to="/yetoo" className="learn-more-button-2">Read more</Link>
+                            <Link to="/yetoo" className="learn-more-button-2">READ MORE</Link>
                         </div>
                     </div>
 
@@ -149,7 +149,7 @@ function Home() {
                                 data
                                 analysis and decision-making.
                             </h1>
-                            <Link to="/powerbi" className="learn-more-button-1">Read more</Link>
+                            <Link to="/powerbi" className="learn-more-button-1">READ MORE</Link>
                         </div>
                     </div>
 
@@ -163,7 +163,7 @@ function Home() {
                                 Business Central offers ERP solutions with tools like Microsoft Flow and PowerApps. It
                                 centralizes goods, customers, sales, and financials, driving digital transformation.
                             </h1>
-                            <Link to="/mbc" className="learn-more-button-2">Read more</Link>
+                            <Link to="/mbc" className="learn-more-button-2">READ MORE</Link>
                         </div>
                     </div>
 

@@ -116,7 +116,8 @@
     background-color: rgb(71, 184, 28); /* Couleur du quatrième lien */
     width: 100%;
 }
-.navbar-menu li:nth-child(5) a:hover {
+.navbar-menu li:nth-child(5
+) a:hover {
     color: rgb(71, 184, 28); /* Couleur du quatrième lien */
 }
 
